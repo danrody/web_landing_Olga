@@ -1,0 +1,976 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/manrope-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/manrope-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/manrope-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/manrope-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/manrope-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/manrope-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #f6f6f6;
+  color: #151515;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: clip;
+  font-family: "Manrope", "Inter", Arial, sans-serif;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.fig-shell {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.fig-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+  overflow: hidden;
+  background: #fff;
+  isolation: isolate;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.06);
+  will-change: transform;
+}
+
+.fig-node,
+.career-challenge-card,
+.mobile-testimonial-card,
+.mobile-alumni-logo {
+  --fig-opacity: 1;
+  --motion-opacity: 1;
+  --motion-x: 0px;
+  --motion-y: 0px;
+  --scroll-x: 0px;
+  --scroll-y: 0px;
+  --float-x: 0px;
+  --float-y: 0px;
+  --hover-x: 0px;
+  --hover-y: 0px;
+  --motion-scale: 1;
+  --motion-blur: 0px;
+  --motion-brightness: 1;
+  opacity: calc(var(--fig-opacity) * var(--motion-opacity));
+  translate:
+    calc(var(--motion-x) + var(--scroll-x) + var(--float-x) + var(--hover-x))
+    calc(var(--motion-y) + var(--scroll-y) + var(--float-y) + var(--hover-y));
+  scale: var(--motion-scale);
+  filter: blur(var(--motion-blur)) brightness(var(--motion-brightness));
+}
+
+.fig-node {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.fig-frame,
+.fig-rect {
+  overflow: hidden;
+}
+
+.fig-text {
+  display: flex;
+  margin: 0;
+  overflow: visible;
+  white-space: pre-wrap;
+  overflow-wrap: normal;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fig-text-content {
+  display: block;
+  width: 100%;
+}
+
+.fig-text span {
+  white-space: pre-wrap;
+}
+
+.fig-vector {
+  overflow: visible;
+}
+
+.fig-buttonish {
+  transition: transform 260ms ease, filter 260ms ease;
+}
+
+.fig-buttonish:hover {
+  filter: brightness(1.03);
+}
+
+.fig-interactive {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.fig-interactive:focus-visible {
+  outline: 2px solid #2815d4;
+  outline-offset: 4px;
+}
+
+[data-id="2141:1312"] {
+  z-index: 70;
+  overflow: visible !important;
+  border: 1px solid rgba(19, 19, 19, 0.08);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 12px 34px rgba(19, 19, 19, 0.12);
+  backdrop-filter: blur(16px);
+  transition: background 220ms ease, border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
+}
+
+[data-id="2141:1312"] > * {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+[data-id="2141:1312"]::before,
+[data-id="2141:1312"]::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  width: 20px;
+  height: 2px;
+  border-radius: 999px;
+  background: #151515;
+  transition: top 220ms ease, rotate 260ms ease, background 220ms ease;
+}
+
+[data-id="2141:1312"]::before {
+  top: 16px;
+}
+
+[data-id="2141:1312"]::after {
+  top: 25px;
+}
+
+[data-id="2141:1312"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 42px rgba(19, 19, 19, 0.16);
+}
+
+[data-id="2141:1312"].is-menu-open {
+  border-color: #151515;
+  background: #151515;
+}
+
+[data-id="2141:1312"].is-menu-open::before,
+[data-id="2141:1312"].is-menu-open::after {
+  top: 21px;
+  background: #fff;
+}
+
+[data-id="2141:1312"].is-menu-open::before {
+  rotate: 45deg;
+}
+
+[data-id="2141:1312"].is-menu-open::after {
+  rotate: -45deg;
+}
+
+.mobile-menu-backdrop {
+  z-index: 45;
+  background: rgba(246, 246, 246, 0.34);
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: blur(0);
+  transition: opacity 220ms ease, backdrop-filter 220ms ease;
+}
+
+.mobile-menu-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  backdrop-filter: blur(5px);
+}
+
+.mobile-menu-panel {
+  position: absolute;
+  z-index: 50;
+  top: 68px;
+  left: 16px;
+  display: grid;
+  width: 288px;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid rgba(19, 19, 19, 0.08);
+  border-radius: 26px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 247, 255, 0.94)),
+    #fff;
+  box-shadow: 0 24px 70px rgba(19, 19, 19, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px) scale(0.98);
+  transform-origin: top right;
+  transition: opacity 220ms ease, transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mobile-menu-panel.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+.mobile-menu-panel button {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) 18px;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid rgba(19, 19, 19, 0.08);
+  border-radius: 16px;
+  padding: 0 14px 0 9px;
+  color: #111;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  font: 700 15px/1 "Manrope", "Inter", Arial, sans-serif;
+  text-align: left;
+  cursor: pointer;
+  counter-increment: mobile-menu-item;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.mobile-menu-panel button::before {
+  content: counter(mobile-menu-item, decimal-leading-zero);
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #fff;
+  background: #2815d4;
+  font: 800 11px/1 "Inter", "Manrope", Arial, sans-serif;
+}
+
+.mobile-menu-panel button::after {
+  content: "";
+  justify-self: end;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  opacity: 0.42;
+  rotate: -45deg;
+}
+
+.mobile-menu-panel button:hover {
+  border-color: rgba(40, 21, 212, 0.24);
+  color: #2815d4;
+  background: #fff;
+  transform: translateX(2px);
+}
+
+.mobile-menu-panel button:focus-visible {
+  outline: 2px solid #2815d4;
+  outline-offset: 2px;
+}
+
+.mobile-menu-panel {
+  counter-reset: mobile-menu-item;
+}
+
+[data-id="2133:12"],
+[data-id="2133:12"] * {
+  font-size: 12px !important;
+  line-height: 20px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-id="2149:107"],
+[data-id="2149:108"],
+[data-id="2149:104"],
+[data-id="2149:112"],
+[data-id="2149:113"],
+[data-id="2015:1892"],
+[data-id="2015:2071"],
+[data-id="2150:347"],
+[data-id="2159:3"],
+[data-id="2159:4"],
+[data-id="2159:5"] {
+  overflow: visible !important;
+}
+
+[data-id="2149:108"],
+[data-id="2149:108"] * {
+  line-height: 30px !important;
+  white-space: nowrap !important;
+}
+
+[data-id="2159:5"],
+[data-id="2159:5"] * {
+  font-size: 36px !important;
+  line-height: 44px !important;
+}
+
+.curriculum-module-accordion {
+  overflow: visible !important;
+  transition: height 520ms cubic-bezier(0.22, 1, 0.36, 1), transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: height, transform;
+}
+
+.curriculum-module-accordion::before,
+.curriculum-module-accordion::after {
+  position: absolute;
+  z-index: 32;
+  pointer-events: none;
+  transition: background 260ms ease, border-color 260ms ease, color 260ms ease, rotate 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.curriculum-module-accordion::before {
+  content: "";
+  top: 82px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: #8238fd;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.curriculum-module-accordion::after {
+  content: "+";
+  top: 82px;
+  right: 20px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  font: 500 24px/1 "Inter", "Manrope", Arial, sans-serif;
+}
+
+.curriculum-module-accordion.is-expanded {
+  z-index: 30;
+}
+
+.curriculum-module-accordion.is-expanded::before {
+  border-color: #2815d4;
+  background: #2815d4;
+}
+
+.curriculum-module-accordion.is-expanded::after {
+  content: "−";
+  color: #fff;
+  rotate: 180deg;
+}
+
+.curriculum-module-accordion.is-closing::before,
+.curriculum-module-accordion.is-closing::after {
+  transition-duration: 0ms !important;
+}
+
+.curriculum-module-accordion.is-closing::after {
+  content: "+";
+  rotate: 0deg;
+}
+
+.curriculum-module-detail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: #151515;
+  background: #f9f9f9;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  translate: 0 -10px;
+  transition: opacity 320ms ease 80ms, translate 420ms cubic-bezier(0.22, 1, 0.36, 1), visibility 320ms ease;
+  font-family: "Manrope", "Inter", Arial, sans-serif;
+}
+
+.curriculum-module-accordion.is-closing .curriculum-module-detail,
+.curriculum-module-accordion.is-closing .curriculum-module-detail * {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition-duration: 0ms !important;
+  transition-delay: 0ms !important;
+}
+
+.curriculum-module-accordion.is-expanded .curriculum-module-detail {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  translate: 0 0;
+}
+
+.curriculum-module-detail strong,
+.curriculum-module-detail p {
+  display: block;
+  margin: 0;
+}
+
+.curriculum-module-detail strong {
+  font-weight: 700;
+}
+
+.curriculum-module-detail p {
+  color: rgba(19, 19, 19, 0.72);
+  font-weight: 400;
+}
+
+.fig-shell[data-mode="desktop"] .curriculum-module-detail {
+  min-height: 154px;
+  padding: 26px 34px;
+}
+
+.fig-shell[data-mode="desktop"] .curriculum-module-detail strong {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.fig-shell[data-mode="desktop"] .curriculum-module-detail p {
+  margin-top: 12px;
+  max-width: 830px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.fig-shell[data-mode="mobile"] .curriculum-module-detail {
+  min-height: 136px;
+  padding: 16px 18px;
+}
+
+.fig-shell[data-mode="mobile"] .curriculum-module-detail strong {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.fig-shell[data-mode="mobile"] .curriculum-module-detail p {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.fig-shell[data-mode="mobile"] .curriculum-module-accordion::before,
+.fig-shell[data-mode="mobile"] .curriculum-module-accordion::after {
+  top: 66px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+}
+
+.fig-shell[data-mode="mobile"] .curriculum-module-accordion::after {
+  font-size: 22px;
+}
+
+.fig-shell[data-mode="mobile"] [data-id="2150:372"],
+.fig-shell[data-mode="mobile"] [data-id="2150:394"],
+.fig-shell[data-mode="mobile"] [data-id="2150:405"],
+.fig-shell[data-mode="mobile"] [data-id="2150:416"],
+.fig-shell[data-mode="mobile"] [data-id="2150:427"],
+.fig-shell[data-mode="mobile"] [data-id="2150:438"],
+.fig-shell[data-mode="mobile"] [data-id="2155:20"],
+.fig-shell[data-mode="mobile"] [data-id="2155:31"],
+.fig-shell[data-mode="mobile"] [data-id="2155:36"],
+.fig-shell[data-mode="mobile"] [data-id="2155:41"],
+.fig-shell[data-mode="mobile"] [data-id="2155:46"],
+.fig-shell[data-mode="mobile"] [data-id="2156:2"],
+.fig-shell[data-mode="mobile"] [data-id="2156:7"],
+.fig-shell[data-mode="mobile"] [data-id="2156:12"] {
+  display: none !important;
+}
+
+[data-id="2018:88"],
+[data-id="2018:88"] * {
+  font-size: 32px !important;
+  line-height: 48px !important;
+}
+
+[data-id="2015:2079"],
+[data-id="2015:2079"] * {
+  white-space: pre-wrap !important;
+}
+
+[data-id="2015:1716"] path,
+[data-id="2015:1717"] path,
+[data-id="2015:1718"] path,
+[data-id="2015:1719"] path,
+[data-id="2015:1720"] path {
+  fill: #fdb538 !important;
+}
+
+[data-id="2088:3"],
+[data-id="2069:7"],
+[data-id="2069:10"],
+[data-id="2019:6"],
+[data-id="2045:51"],
+[data-id="2046:54"],
+[data-id="2019:9"],
+[data-id="2069:3"],
+[data-id="2046:60"],
+[data-id="2046:57"],
+[data-id="2116:50"],
+[data-id="2070:3"],
+[data-id="2046:82"],
+[data-id="2046:75"],
+[data-id="2046:72"],
+[data-id="2046:80"],
+[data-id="2018:74"],
+[data-id="2154:10"],
+[data-id="2154:11"],
+[data-id="2154:12"],
+[data-id="2154:13"],
+[data-id="2154:16"],
+[data-id="2154:17"],
+[data-id="2154:18"],
+[data-id="2154:19"] {
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  overflow: visible !important;
+}
+
+.mobile-alumni-marquee {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.mobile-alumni-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 18px;
+  align-items: center;
+  padding: 28px 0;
+  animation: alumni-marquee 24s linear infinite;
+}
+
+.mobile-alumni-logo {
+  display: grid;
+  place-items: center;
+  width: 138px;
+  height: 76px;
+  flex: 0 0 auto;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.mobile-alumni-logo img {
+  display: block;
+  max-width: 112px;
+  max-height: 52px;
+  object-fit: contain;
+}
+
+[data-id="2154:10"],
+[data-id="2154:11"],
+[data-id="2154:12"],
+[data-id="2154:13"],
+[data-id="2154:16"],
+[data-id="2154:17"],
+[data-id="2154:18"],
+[data-id="2154:19"] {
+  background-size: contain !important;
+  background-position: center !important;
+  overflow: visible !important;
+}
+
+.mobile-testimonial-strip {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  pointer-events: auto;
+  scrollbar-width: none;
+}
+
+.mobile-testimonial-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-testimonial-card {
+  width: 296px;
+  height: 260px;
+  flex: 0 0 296px;
+  scroll-snap-align: start;
+  border-radius: 20px;
+  padding: 24px 16px;
+  color: #131313;
+  background: #f9f9f9;
+  font-family: "Manrope", "Inter", Arial, sans-serif;
+}
+
+.mobile-testimonial-header {
+  display: grid;
+  grid-template-columns: 73px 1fr;
+  gap: 8px;
+  align-items: center;
+  min-height: 74px;
+}
+
+.mobile-testimonial-header img {
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.mobile-testimonial-header strong {
+  display: block;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.mobile-testimonial-header span {
+  display: block;
+  margin-top: 8px;
+  color: rgba(19, 19, 19, 0.45);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 17px;
+}
+
+.mobile-testimonial-card p {
+  margin: 24px 0 0;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.career-challenge-marquee {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.career-challenge-track {
+  display: flex;
+  width: max-content;
+  align-items: stretch;
+  animation: career-challenge-marquee 46s linear infinite;
+  will-change: transform;
+}
+
+.career-challenge-card {
+  display: grid;
+  grid-template-rows: 168px auto 1fr;
+  align-items: start;
+  flex: 0 0 308px;
+  height: 336px;
+  margin-right: 48px;
+  padding: 20px 16px 18px;
+  border-radius: 20px;
+  color: #292d2d;
+  background: #fff;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.08);
+  font-family: "Manrope", "Inter", Arial, sans-serif;
+  text-align: center;
+}
+
+.career-challenge-card img {
+  display: block;
+  width: 100%;
+  height: 164px;
+  object-fit: contain;
+}
+
+.career-challenge-card strong,
+.career-challenge-card span {
+  display: block;
+}
+
+.career-challenge-card strong {
+  align-self: end;
+  margin-top: 8px;
+  color: #292d2d;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+.career-challenge-card span {
+  margin-top: 14px;
+  color: #00046f;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.fig-shell[data-mode="mobile"] .career-challenge-track {
+  animation-duration: 38s;
+}
+
+.fig-shell[data-mode="mobile"] .career-challenge-card {
+  grid-template-rows: 126px auto 1fr;
+  flex-basis: 236px;
+  height: 266px;
+  margin-right: 18px;
+  padding: 15px 12px 14px;
+  border-radius: 16px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+}
+
+.fig-shell[data-mode="mobile"] .career-challenge-card img {
+  height: 122px;
+}
+
+.fig-shell[data-mode="mobile"] .career-challenge-card strong {
+  margin-top: 7px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.fig-shell[data-mode="mobile"] .career-challenge-card span {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@keyframes alumni-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes career-challenge-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.site-dialog-backdrop {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(15, 15, 18, 0.32);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+}
+
+.site-dialog-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.site-dialog {
+  position: relative;
+  width: min(100%, 520px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  padding: 34px;
+  color: #111;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+  font-family: "Manrope", "Inter", Arial, sans-serif;
+}
+
+.site-dialog-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  color: #111;
+  background: #f0f0f3;
+  font-size: 24px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.site-dialog-title {
+  margin: 0;
+  font: 800 28px/1.15 "Inter", "Manrope", Arial, sans-serif;
+}
+
+.site-dialog-body {
+  margin: 16px 0 0;
+  color: #333;
+  font: 400 17px/1.55 "Manrope", "Inter", Arial, sans-serif;
+}
+
+.animated-layer,
+.fig-interactive,
+.curriculum-module-accordion,
+.career-challenge-card,
+.mobile-testimonial-card,
+.mobile-alumni-logo {
+  will-change: opacity, translate, scale, filter, clip-path;
+  transition: opacity 620ms ease, translate 620ms ease, scale 420ms ease, filter 620ms ease;
+}
+
+.animated-layer.is-visible,
+.career-challenge-card.is-visible,
+.mobile-testimonial-card.is-visible,
+.mobile-alumni-logo.is-visible,
+.curriculum-module-accordion.is-visible {
+  --motion-opacity: 1;
+  --motion-x: 0px;
+  --motion-y: 0px;
+  --motion-blur: 0px;
+}
+
+.motion-gsap .animated-layer,
+.motion-gsap .fig-interactive,
+.motion-gsap .curriculum-module-accordion,
+.motion-gsap .career-challenge-card,
+.motion-gsap .mobile-testimonial-card,
+.motion-gsap .mobile-alumni-logo {
+  transition: none;
+}
+
+.motion-gsap .curriculum-module-detail {
+  transition: none;
+}
+
+.motion-gsap .career-challenge-track,
+.motion-gsap .mobile-alumni-marquee-track {
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animated-layer,
+  .fig-buttonish,
+  .fig-interactive,
+  .curriculum-module-accordion,
+  .career-challenge-card,
+  .mobile-testimonial-card,
+  .mobile-alumni-logo {
+    transition: none;
+  }
+
+  .career-challenge-track,
+  .mobile-alumni-marquee-track {
+    animation: none;
+  }
+}
