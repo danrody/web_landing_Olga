@@ -44,7 +44,7 @@ const CLICK_ACTIONS = {
 
 const EXTERNAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/olga-perekopskaya-executive-master-a3322515",
-  whatsapp: "https://wa.me/"
+  whatsapp: "https://wa.me/79857605854"
 };
 
 const DOCUMENT_COPY = {
@@ -73,6 +73,8 @@ const MOBILE_NODE_OVERRIDES = {
   "2149:104": { height: 1060 },
   "2149:112": { height: 456 },
   "2149:113": { height: 448 },
+  "2154:12": { width: 62, height: 62, matrix: [1, 0, 0, 1, 9, 50] },
+  "2154:18": { width: 56, height: 76, matrix: [1, 0, 0, 1, 16, 29] },
   "2150:353": { width: 280, matrix: [1, 0, 0, 1, 4, 152] },
   "2159:3": { height: 70 },
   "2159:4": { height: 48 },
@@ -80,6 +82,10 @@ const MOBILE_NODE_OVERRIDES = {
 };
 
 const DESKTOP_NODE_OVERRIDES = {
+  "2019:9": { width: 68, height: 68, matrix: [1, 0, 0, 1, 34, 889] },
+  "2046:60": { width: 148, height: 56, matrix: [1, 0, 0, 1, 594, 899] },
+  "2116:50": { width: 78, height: 106, matrix: [1, 0, 0, 1, 20, 1017] },
+  "2018:74": { width: 170, height: 60, matrix: [1, 0, 0, 1, 514, 1045] },
   "2015:1892": { height: 1545 },
   "2015:2079": { width: 800, matrix: [1, 0, 0, 1, 160, 184] }
 };
@@ -306,6 +312,7 @@ function createShell(frame) {
     mobileMenuPanel = null;
   }
 
+  stage.appendChild(createHeroWhatsAppButton());
   shell.appendChild(stage);
   return shell;
 }
@@ -725,16 +732,26 @@ function setupAmbientMotion(gsap, ScrollTrigger) {
 
 function setupInteractiveMotion(gsap) {
   activeStage.querySelectorAll(".fig-interactive, .curriculum-module-accordion").forEach((element) => {
+    const stableDesktopHover = activeMode === "desktop" && element.classList.contains("fig-interactive");
+    const hoverY = stableDesktopHover ? "-1px" : "-4px";
+    const hoverScale = stableDesktopHover ? 1.004 : 1.012;
+    const pressScale = stableDesktopHover ? 0.997 : 0.985;
+    const leaveEase = stableDesktopHover ? "power2.out" : "elastic.out(1, 0.55)";
+
     element.addEventListener("pointerenter", () => {
       gsap.to(element, {
-        "--hover-y": "-4px",
-        "--motion-scale": 1.012,
-        duration: 0.32,
+        "--hover-y": hoverY,
+        "--motion-scale": hoverScale,
+        duration: stableDesktopHover ? 0.18 : 0.32,
         ease: "power3.out"
       });
     });
 
     element.addEventListener("pointermove", (event) => {
+      if (stableDesktopHover) {
+        return;
+      }
+
       const rect = element.getBoundingClientRect();
       if (!rect.width || !rect.height) {
         return;
@@ -756,14 +773,14 @@ function setupInteractiveMotion(gsap) {
         "--hover-x": "0px",
         "--hover-y": "0px",
         "--motion-scale": 1,
-        duration: 0.52,
-        ease: "elastic.out(1, 0.55)"
+        duration: stableDesktopHover ? 0.24 : 0.52,
+        ease: leaveEase
       });
     });
 
     element.addEventListener("pointerdown", () => {
       gsap.to(element, {
-        "--motion-scale": 0.985,
+        "--motion-scale": pressScale,
         duration: 0.12,
         ease: "power2.out"
       });
@@ -771,8 +788,8 @@ function setupInteractiveMotion(gsap) {
 
     element.addEventListener("pointerup", () => {
       gsap.to(element, {
-        "--motion-scale": 1.012,
-        duration: 0.24,
+        "--motion-scale": hoverScale,
+        duration: stableDesktopHover ? 0.16 : 0.24,
         ease: "power2.out"
       });
     });
@@ -1270,6 +1287,39 @@ function createCareerChallengeCard(card) {
 
   article.append(image, title, subtitle);
   return article;
+}
+
+function createHeroWhatsAppButton() {
+  const config =
+    activeMode === "mobile"
+      ? { x: 151, y: 692, width: 154, height: 36 }
+      : { x: 287, y: 398, width: 244, height: 72 };
+  const button = createOverlay("hero-whatsapp-button fig-interactive fig-buttonish animated-layer", config);
+  const action = { type: "external", target: "whatsapp" };
+
+  button.dataset.id = activeMode === "mobile" ? "hero-whatsapp-mobile" : "hero-whatsapp-desktop";
+  button.setAttribute("role", "link");
+  button.setAttribute("tabindex", "0");
+  button.setAttribute("aria-label", "Open WhatsApp group");
+
+  const label = document.createElement("span");
+  label.textContent = "WhatsApp group";
+  button.appendChild(label);
+
+  const activate = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    runAction(action);
+  };
+
+  button.addEventListener("click", activate);
+  button.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      activate(event);
+    }
+  });
+
+  return button;
 }
 
 function createOverlay(className, { x, y, width, height }) {
