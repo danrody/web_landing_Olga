@@ -419,6 +419,14 @@ body {
   line-height: 44px !important;
 }
 
+[data-id="2015:2415"] {
+  height: 524px !important;
+}
+
+[data-id="2153:2"] {
+  height: 539px !important;
+}
+
 .curriculum-module-accordion {
   overflow: visible !important;
   transition: height 520ms cubic-bezier(0.22, 1, 0.36, 1), transform 520ms cubic-bezier(0.22, 1, 0.36, 1);

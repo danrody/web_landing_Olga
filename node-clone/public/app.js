@@ -43,7 +43,7 @@ const CLICK_ACTIONS = {
 };
 
 const EXTERNAL_LINKS = {
-  linkedin: "https://www.linkedin.com/",
+  linkedin: "https://www.linkedin.com/in/olga-perekopskaya-executive-master-a3322515",
   whatsapp: "https://wa.me/"
 };
 
@@ -217,6 +217,21 @@ const MOTION_GROUPS = {
     stats: ["2140:16", "2140:2", "2140:7"]
   }
 };
+
+const SUBTLE_ARROW_MOTION_IDS = new Set([
+  "2106:2",
+  "2106:8",
+  "2115:47",
+  "2115:48",
+  "2018:6",
+  "2096:2",
+  "2096:3",
+  "2147:20",
+  "2147:22",
+  "2149:23"
+]);
+
+const STATIC_REVEAL_IDS = new Set(["2015:1892", "2015:2415", "2153:2"]);
 
 const MOTION_REVEAL_SELECTOR = [
   ".animated-layer",
@@ -583,16 +598,19 @@ function setupHeroMotion(gsap) {
     return;
   }
 
-  gsap.set(heroElements, {
-    "--motion-opacity": 0,
-    "--motion-y": activeMode === "mobile" ? "22px" : "36px",
-    "--motion-blur": "12px",
-    clipPath: "inset(0% 0% 18% 0% round 16px)"
-  });
+  const subtleArrows = heroElements.filter(isSubtleArrowMotionElement);
+  const primaryHeroElements = heroElements.filter((element) => !isSubtleArrowMotionElement(element));
+  const timeline = gsap.timeline({ defaults: { ease: "power4.out" } });
 
-  gsap
-    .timeline({ defaults: { ease: "power4.out" } })
-    .to(heroElements, {
+  if (primaryHeroElements.length) {
+    gsap.set(primaryHeroElements, {
+      "--motion-opacity": 0,
+      "--motion-y": activeMode === "mobile" ? "22px" : "36px",
+      "--motion-blur": "12px",
+      clipPath: "inset(0% 0% 18% 0% round 16px)"
+    });
+
+    timeline.to(primaryHeroElements, {
       "--motion-opacity": 1,
       "--motion-y": "0px",
       "--motion-blur": "0px",
@@ -600,11 +618,33 @@ function setupHeroMotion(gsap) {
       duration: 1.05,
       stagger: activeMode === "mobile" ? 0.055 : 0.075
     }, 0.12);
+  }
+
+  if (subtleArrows.length) {
+    gsap.set(subtleArrows, {
+      "--motion-opacity": 0.62,
+      "--motion-y": "6px",
+      "--motion-blur": "2px",
+      clipPath: "inset(0% 0% 4% 0% round 8px)"
+    });
+
+    timeline.to(subtleArrows, {
+      "--motion-opacity": 1,
+      "--motion-y": "0px",
+      "--motion-blur": "0px",
+      clipPath: "inset(0% 0% 0% 0% round 0px)",
+      duration: 0.72,
+      stagger: 0.035,
+      ease: "power2.out"
+    }, 0.22);
+  }
 }
 
 function setupScrollReveals(gsap, ScrollTrigger) {
   const heroSet = new Set(getMotionElements("hero"));
-  const revealElements = getRevealElements().filter((element) => !heroSet.has(element));
+  const allRevealElements = getRevealElements();
+  allRevealElements.filter(isStaticRevealElement).forEach(markMotionVisible);
+  const revealElements = allRevealElements.filter((element) => !heroSet.has(element) && !isStaticRevealElement(element));
 
   if (!revealElements.length) {
     return;
@@ -641,11 +681,16 @@ function setupAmbientMotion(gsap, ScrollTrigger) {
   const floatElements = getMotionElements("float");
 
   floatElements.forEach((element, index) => {
+    const isSubtleArrow = isSubtleArrowMotionElement(element);
+    const floatX = isSubtleArrow ? (index % 2 === 0 ? 3 : -3) : index % 2 === 0 ? 10 : -12;
+    const floatY = isSubtleArrow ? (index % 3 === 0 ? -5 : 5) : index % 3 === 0 ? -18 : 16;
+    const scrollY = isSubtleArrow ? (index % 2 === 0 ? -8 : 7) : index % 2 === 0 ? -34 : 28;
+
     gsap.to(element, {
-      "--float-x": `${index % 2 === 0 ? 10 : -12}px`,
-      "--float-y": `${index % 3 === 0 ? -18 : 16}px`,
-      "--motion-scale": index % 2 === 0 ? 1.025 : 0.985,
-      duration: 3.2 + index * 0.25,
+      "--float-x": `${floatX}px`,
+      "--float-y": `${floatY}px`,
+      "--motion-scale": isSubtleArrow ? (index % 2 === 0 ? 1.006 : 0.996) : index % 2 === 0 ? 1.025 : 0.985,
+      duration: (isSubtleArrow ? 6.6 : 3.2) + index * 0.25,
       repeat: -1,
       yoyo: true,
       ease: "sine.inOut",
@@ -653,13 +698,13 @@ function setupAmbientMotion(gsap, ScrollTrigger) {
     });
 
     gsap.to(element, {
-      "--scroll-y": `${index % 2 === 0 ? -34 : 28}px`,
+      "--scroll-y": `${scrollY}px`,
       ease: "none",
       scrollTrigger: {
         trigger: element,
         start: "top bottom",
         end: "bottom top",
-        scrub: 1.2
+        scrub: isSubtleArrow ? 2.4 : 1.2
       }
     });
   });
@@ -790,7 +835,9 @@ function setupNumberMotion(gsap, ScrollTrigger) {
 }
 
 function setupRevealFallback() {
-  const revealElements = getRevealElements();
+  const allRevealElements = getRevealElements();
+  allRevealElements.filter(isStaticRevealElement).forEach(markMotionVisible);
+  const revealElements = allRevealElements.filter((element) => !isStaticRevealElement(element));
   revealElements.forEach((element) => prepareRevealElement(element));
 
   if (!("IntersectionObserver" in window)) {
@@ -838,6 +885,14 @@ function getRevealElements() {
 
 function getMotionElements(group) {
   return (MOTION_GROUPS[activeMode]?.[group] || []).map((id) => findStageElement(id)).filter(Boolean);
+}
+
+function isSubtleArrowMotionElement(element) {
+  return SUBTLE_ARROW_MOTION_IDS.has(element.dataset.id);
+}
+
+function isStaticRevealElement(element) {
+  return STATIC_REVEAL_IDS.has(element.dataset.id);
 }
 
 function queueMotionRefresh() {
