@@ -1,0 +1,10 @@
+{
+  "name": "careerdrive-node-clone-wrapper",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix node-clone run check",
+    "check": "npm --prefix node-clone run check",
+    "dev": "npm --prefix node-clone run dev",
+    "start": "npm --prefix node-clone run start"
+  }
+}
