@@ -60,7 +60,11 @@ const DOCUMENT_COPY = {
   }
 };
 
-const MOBILE_SCALE_FACTOR = 0.9;
+const MOBILE_SCALE_FACTOR = 1;
+const FRAME_END_NODE_IDS = {
+  desktop: "2019:2",
+  mobile: "2153:37"
+};
 const MOBILE_HIDDEN_NODE_IDS = new Set(["2159:20"]);
 
 const MOBILE_NODE_OVERRIDES = {
@@ -102,7 +106,7 @@ const CURRICULUM_SECTION_IDS = {
 
 const AFTER_CURRICULUM_IDS = {
   desktop: ["2015:1892"],
-  mobile: ["2159:2", "2153:2"]
+  mobile: ["2159:2", "2153:2", "2153:37"]
 };
 
 const CURRICULUM_EXPANSION_HEIGHT = {
@@ -130,25 +134,27 @@ const TESTIMONIALS = [
   {
     name: "Albert",
     role: "Graduate of a Specialized High School, Moscow",
-    image: "/images/figma/people/albert.jpg",
+    image: "/images/figma/people/albert-testimonial.png",
     text:
       "I was a top student with many interests, but no clear direction. Through working with Olga, I understood what truly mattered to me and chose a path I had never considered before: Computational Mathematics and Cybernetics, with a future in fintech."
   },
   {
     name: "Alexandra",
     role: "High School Student, Madrid",
-    image: "/images/figma/people/alexandra.jpg",
+    image: "/images/figma/people/alexandra-testimonial.png",
     text:
       "Moving to a new country and a completely different school system turned my plans upside down. Working with Olga gave me clarity, confidence, and a real plan for how to build a future that truly feels like mine."
   },
   {
-    name: "Ekaterina",
+    name: "Elena V",
     role: "High School Teacher, Group of 24 students",
-    image: "/images/figma/people/mentor-avatar.png",
+    image: "/images/figma/people/elena-v-testimonial.png",
     text:
       "This course gave my students what no career test ever could: real ownership of their future. I watched them move from confusion and safe choices to clarity, confidence, and self-trust."
   }
 ];
+
+const TESTIMONIAL_AVATAR_GROUP_IDS = new Set(["2015:1894"]);
 
 const CAREER_CHALLENGE_CARDS = [
   {
@@ -339,7 +345,32 @@ function getViewportWidth() {
 }
 
 function getFrameRenderHeight(frame) {
+  const endNodeBottom = getNodeBottomById(frame, FRAME_END_NODE_IDS[activeMode]);
+  if (endNodeBottom) {
+    return Math.ceil(endNodeBottom);
+  }
+
   return Math.ceil(Math.max(frame.height, getNodeBottom(frame)));
+}
+
+function getNodeBottomById(node, id, parentMatrix = [1, 0, 0, 1, 0, 0]) {
+  if (!id) {
+    return 0;
+  }
+
+  const matrix = multiplyMatrix(parentMatrix, node.matrix || [1, 0, 0, 1, node.x || 0, node.y || 0]);
+  if (node.id === id) {
+    return matrix[5] + (node.height || 0);
+  }
+
+  for (const child of node.children || []) {
+    const bottom = getNodeBottomById(child, id, matrix);
+    if (bottom) {
+      return bottom;
+    }
+  }
+
+  return 0;
 }
 
 function getNodeBottom(node, parentMatrix = [1, 0, 0, 1, 0, 0]) {
@@ -384,7 +415,26 @@ function createNode(node) {
     element.appendChild(createNode(child));
   }
 
+  if (TESTIMONIAL_AVATAR_GROUP_IDS.has(node.id)) {
+    decorateTestimonialAvatarGroup(element);
+  }
+
   return element;
+}
+
+function decorateTestimonialAvatarGroup(element) {
+  element.classList.add("testimonial-avatar-group");
+  element.setAttribute("aria-label", "Student testimonial photos");
+  element.replaceChildren(
+    ...TESTIMONIALS.map((testimonial, index) => {
+      const image = document.createElement("img");
+      image.src = testimonial.image;
+      image.alt = "";
+      image.loading = "lazy";
+      image.className = `testimonial-avatar testimonial-avatar-${index + 1}`;
+      return image;
+    })
+  );
 }
 
 function createText(node) {

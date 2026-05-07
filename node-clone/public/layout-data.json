@@ -4085,7 +4085,7 @@
                   "opacity": 1,
                   "radius": 36.49,
                   "style": {
-                    "image": "/images/figma/people/albert.jpg",
+                    "image": "/images/figma/people/albert-testimonial.png",
                     "imageFit": "100% 100%"
                   }
                 },
@@ -4299,7 +4299,7 @@
                   "opacity": 1,
                   "radius": 35.79,
                   "style": {
-                    "image": "/images/figma/people/alexandra.jpg",
+                    "image": "/images/figma/people/alexandra-testimonial.png",
                     "imageFit": "100% 100%"
                   }
                 },
@@ -4513,7 +4513,7 @@
                   "opacity": 1,
                   "radius": 0,
                   "style": {
-                    "image": "/images/figma/people/mentor-avatar.png",
+                    "image": "/images/figma/people/elena-v-testimonial.png",
                     "imageFit": "100% 100%"
                   }
                 },
@@ -16546,7 +16546,7 @@
                                   "opacity": 1,
                                   "radius": 36.5,
                                   "style": {
-                                    "image": "/images/figma/people/albert.jpg",
+                                    "image": "/images/figma/people/albert-testimonial.png",
                                     "imageFit": "100% 100%"
                                   },
                                   "children": [

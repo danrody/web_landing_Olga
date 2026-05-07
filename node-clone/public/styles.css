@@ -230,7 +230,7 @@ body {
   border: 1px solid rgba(19, 19, 19, 0.08);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.82);
-  box-shadow: 0 12px 34px rgba(19, 19, 19, 0.12);
+  box-shadow: none;
   backdrop-filter: blur(16px);
   transition: background 220ms ease, border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
 }
@@ -262,7 +262,7 @@ body {
 
 [data-id="2141:1312"]:hover {
   transform: translateY(-1px);
-  box-shadow: 0 16px 42px rgba(19, 19, 19, 0.16);
+  box-shadow: none;
 }
 
 [data-id="2141:1312"].is-menu-open {
@@ -650,6 +650,10 @@ body {
   transform: matrix(1, 0, 0, 1, 0, -18) !important;
 }
 
+[data-id="2015:2417"] {
+  overflow: visible !important;
+}
+
 [data-id="2153:11"] {
   width: 246px !important;
   height: 46px !important;
@@ -683,6 +687,86 @@ body {
 [data-id="2015:2419"],
 [data-id="2153:12"] {
   display: none !important;
+}
+
+[data-id="2153:28"] {
+  display: none !important;
+}
+
+[data-id="2015:1908"],
+[data-id="2015:1914"],
+[data-id="2015:1920"] {
+  display: none !important;
+}
+
+[data-id="2015:1905"],
+[data-id="2159:25"] {
+  border-radius: 50% !important;
+  background-size: cover !important;
+  background-position: 48% 28% !important;
+}
+
+[data-id="2015:1911"] {
+  border-radius: 50% !important;
+  background-size: cover !important;
+  background-position: 50% 26% !important;
+}
+
+[data-id="2015:1917"] {
+  border-radius: 50% !important;
+  background-size: 128% auto !important;
+  background-position: 52% 18% !important;
+}
+
+[data-id="2166:3"] {
+  display: none !important;
+}
+
+.testimonial-avatar-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible !important;
+  background-image: none !important;
+}
+
+.testimonial-avatar {
+  display: block;
+  width: 55px;
+  height: 55px;
+  margin-left: -10px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: #f9f9f9;
+  box-shadow: 0 8px 24px rgba(19, 19, 19, 0.12);
+  object-fit: cover;
+}
+
+.testimonial-avatar:first-child {
+  margin-left: 0;
+  object-position: 48% 28%;
+}
+
+.testimonial-avatar-2 {
+  object-position: 50% 26%;
+}
+
+.testimonial-avatar-3 {
+  scale: 1.08;
+  object-position: 52% 18%;
+}
+
+.mobile-testimonial-card:first-child .mobile-testimonial-header img {
+  object-position: 48% 28%;
+}
+
+.mobile-testimonial-card:nth-child(2) .mobile-testimonial-header img {
+  object-position: 50% 26%;
+}
+
+.mobile-testimonial-card:nth-child(3) .mobile-testimonial-header img {
+  object-position: 52% 18%;
+  scale: 1.08;
 }
 
 [data-id="2018:88"],
