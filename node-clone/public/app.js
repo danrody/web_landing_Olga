@@ -30,16 +30,16 @@ const CLICK_ACTIONS = {
   "2019:26": { type: "internal", target: "/resume" },
   "2015:2418": { type: "external", target: "whatsapp" },
   "2015:2424": { type: "external", target: "linkedin" },
-  "2015:2426": { type: "document", target: "privacy" },
-  "2015:2427": { type: "document", target: "terms" },
+  "2015:2426": { type: "internal", target: "/privacy" },
+  "2015:2427": { type: "internal", target: "/terms" },
   "2141:1312": { type: "menu" },
   "2133:11": { type: "scroll", target: "curriculum" },
   "2133:8": { type: "scroll", target: "top" },
   "2149:142": { type: "external", target: "linkedin" },
   "2153:11": { type: "external", target: "whatsapp" },
   "2153:18": { type: "external", target: "linkedin" },
-  "2153:24": { type: "document", target: "privacy" },
-  "2153:26": { type: "document", target: "terms" }
+  "2153:24": { type: "internal", target: "/privacy" },
+  "2153:26": { type: "internal", target: "/terms" }
 };
 
 const EXTERNAL_LINKS = {
@@ -77,6 +77,7 @@ const MOBILE_NODE_OVERRIDES = {
   "2149:104": { height: 1060 },
   "2149:112": { height: 456 },
   "2149:113": { height: 448 },
+  "2154:16": { matrix: [1, 0, 0, 1, 4, 4] },
   "2154:12": { width: 62, height: 62, matrix: [1, 0, 0, 1, 9, 50] },
   "2154:18": { width: 56, height: 76, matrix: [1, 0, 0, 1, 16, 29] },
   "2150:353": { width: 280, matrix: [1, 0, 0, 1, 4, 152] },
@@ -120,14 +121,11 @@ const CURRICULUM_LAYOUT_MOTION = {
 };
 
 const ALUMNI_LOGOS = [
-  "/images/figma/partners/msd.png",
-  "/images/figma/partners/insead.png",
-  "/images/figma/partners/certificate-training.png",
-  "/images/figma/partners/skolkovo.png",
-  "/images/figma/partners/sibur.png",
-  "/images/figma/partners/cbsd.png",
-  "/images/figma/partners/ey.png",
-  "/images/figma/partners/global-coaching-university.png"
+  "/images/figma/partners/career-partner-08.png",
+  "/images/figma/partners/career-partner-07.png",
+  "/images/figma/partners/career-partner-04.png",
+  "/images/figma/partners/career-partner-05.png",
+  "/images/figma/partners/career-partner-06.png"
 ];
 
 const TESTIMONIALS = [
@@ -1350,10 +1348,10 @@ function createHeroWhatsAppButton() {
   button.dataset.id = activeMode === "mobile" ? "hero-whatsapp-mobile" : "hero-whatsapp-desktop";
   button.setAttribute("role", "link");
   button.setAttribute("tabindex", "0");
-  button.setAttribute("aria-label", "Open WhatsApp group");
+  button.setAttribute("aria-label", "Open WhatsApp for contact");
 
   const label = document.createElement("span");
-  label.textContent = "WhatsApp group";
+  label.textContent = "WhatsApp for contact";
   button.appendChild(label);
 
   const activate = (event) => {
@@ -1614,7 +1612,11 @@ function collectText(node, texts = []) {
 function interactionLabel(node, action) {
   if (action.type === "menu") return "Open menu";
   if (action.type === "module") return "Open curriculum module";
-  if (action.type === "internal") return "Open resume";
+  if (action.type === "internal") {
+    if (action.target === "/privacy") return "Open privacy policy";
+    if (action.target === "/terms") return "Open terms and conditions";
+    return "Open resume";
+  }
   if (action.type === "document") return action.target === "privacy" ? "Open privacy policy" : "Open terms and conditions";
   if (action.type === "external") return action.target === "linkedin" ? "Open LinkedIn" : "Open WhatsApp";
   return node.text || node.name || "Open section";

@@ -53,6 +53,14 @@ function resolveRequestPath(pathname) {
     return "/resume.html";
   }
 
+  if (pathname === "/privacy" || pathname === "/privacy/") {
+    return "/privacy.html";
+  }
+
+  if (pathname === "/terms" || pathname === "/terms/") {
+    return "/terms.html";
+  }
+
   return pathname;
 }
 

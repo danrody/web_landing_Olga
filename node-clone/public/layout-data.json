@@ -4778,7 +4778,7 @@
                   "children": [
                     {
                       "id": "2015:2418",
-                      "name": "Join WhatsApp group to network",
+                      "name": "WhatsApp for contact",
                       "type": "TEXT",
                       "x": 0,
                       "y": -4,
@@ -4797,7 +4797,7 @@
                       "style": {
                         "background": "rgba(255, 255, 255, 1)"
                       },
-                      "text": "Join WhatsApp group to network",
+                      "text": "WhatsApp for contact",
                       "textStyle": {
                         "color": "rgba(255, 255, 255, 1)",
                         "fontFamily": "Manrope",
@@ -4810,7 +4810,7 @@
                       },
                       "textRuns": [
                         {
-                          "text": "Join WhatsApp group to network",
+                          "text": "WhatsApp for contact",
                           "style": {
                             "color": "rgba(255, 255, 255, 1)",
                             "fontFamily": "Manrope",
@@ -10680,21 +10680,21 @@
                               "name": "image 9",
                               "type": "ROUNDED_RECTANGLE",
                               "x": -6,
-                              "y": -2,
+                              "y": 4,
                               "matrix": [
                                 1,
                                 0,
                                 0,
                                 1,
                                 -6,
-                                -2
+                                4
                               ],
-                              "width": 104,
-                              "height": 35,
+                              "width": 112,
+                              "height": 22,
                               "opacity": 1,
                               "radius": 0,
                               "style": {
-                                "image": "/images/figma/partners/sibur.png",
+                                "image": "/images/figma/partners/metinvest.png",
                                 "imageFit": "cover"
                               }
                             },
@@ -15256,7 +15256,7 @@
                               "children": [
                                 {
                                   "id": "2153:11",
-                                  "name": "Join WhatsApp group to network",
+                                  "name": "WhatsApp for contact",
                                   "type": "TEXT",
                                   "x": 34.66,
                                   "y": 0,
@@ -15275,7 +15275,7 @@
                                   "style": {
                                     "background": "rgba(255, 255, 255, 1)"
                                   },
-                                  "text": "Join WhatsApp group to\nnetwork",
+                                  "text": "WhatsApp for contact",
                                   "textStyle": {
                                     "color": "rgba(255, 255, 255, 1)",
                                     "fontFamily": "Manrope",
@@ -15288,7 +15288,7 @@
                                   },
                                   "textRuns": [
                                     {
-                                      "text": "Join WhatsApp group to\nnetwork",
+                                      "text": "WhatsApp for contact",
                                       "style": {
                                         "color": "rgba(255, 255, 255, 1)",
                                         "fontFamily": "Manrope",
@@ -15803,7 +15803,7 @@
             },
             {
               "id": "2153:28",
-              "name": "68983a77b248131735a61496_12brave.svg",
+              "name": "careerdrive.svg",
               "type": "FRAME",
               "x": 0,
               "y": 477.58,

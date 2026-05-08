@@ -1,0 +1,122 @@
+.legal-body {
+  min-height: 100vh;
+  background: #f6f6f6;
+  color: #151515;
+}
+
+.legal-nav {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100% - 48px, 1120px);
+  min-height: 76px;
+  margin: 0 auto;
+  padding: 18px 0;
+  background: rgba(246, 246, 246, 0.9);
+  backdrop-filter: blur(18px);
+}
+
+.legal-brand {
+  display: inline-flex;
+  align-items: center;
+  width: 172px;
+  height: 34px;
+}
+
+.legal-brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.legal-links a,
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  border: 1px solid rgba(21, 21, 21, 0.12);
+  border-radius: 999px;
+  padding: 0 18px;
+  color: inherit;
+  background: rgba(255, 255, 255, 0.72);
+  font: 700 14px/1 "Manrope", "Inter", Arial, sans-serif;
+  text-decoration: none;
+}
+
+.legal-page {
+  width: min(100% - 48px, 1120px);
+  margin: 0 auto;
+  padding: 44px 0 92px;
+}
+
+.legal-document {
+  border-top: 1px solid rgba(21, 21, 21, 0.12);
+  padding-top: 44px;
+}
+
+.legal-kicker {
+  margin: 0 0 16px;
+  color: #2815d4;
+  font: 800 14px/1.2 "Manrope", "Inter", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.legal-document h1 {
+  max-width: 860px;
+  margin: 0;
+  color: #151515;
+  font: 900 64px/0.98 "Inter", "Manrope", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.legal-copy {
+  max-width: 900px;
+  margin: 34px 0 0;
+  white-space: pre-wrap;
+  color: rgba(21, 21, 21, 0.78);
+  font: 400 17px/1.65 "Manrope", "Inter", Arial, sans-serif;
+}
+
+.legal-back {
+  margin-top: 34px;
+  color: #fff;
+  background: #151515;
+}
+
+@media (max-width: 720px) {
+  .legal-nav,
+  .legal-page {
+    width: min(100% - 32px, 1120px);
+  }
+
+  .legal-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .legal-links {
+    justify-content: flex-start;
+  }
+
+  .legal-document h1 {
+    font-size: 42px;
+    line-height: 1.04;
+  }
+
+  .legal-copy {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}

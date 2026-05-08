@@ -961,7 +961,7 @@ body {
   border-radius: 20px;
   color: #292d2d;
   background: #fff;
-  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.08);
+  box-shadow: none;
   font-family: "Manrope", "Inter", Arial, sans-serif;
   text-align: center;
 }
@@ -1006,7 +1006,7 @@ body {
   margin-right: 18px;
   padding: 15px 12px 14px;
   border-radius: 16px;
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+  box-shadow: none;
 }
 
 .fig-shell[data-mode="mobile"] .career-challenge-card img {

@@ -2,7 +2,10 @@ import { existsSync, readFileSync } from "node:fs";
 
 const requiredFiles = [
   "public/index.html",
+  "public/privacy.html",
   "public/resume.html",
+  "public/terms.html",
+  "public/legal.css",
   "public/styles.css",
   "public/resume.css",
   "public/app.js",
@@ -28,7 +31,10 @@ for (const file of requiredFiles) {
 
 const runtimeFiles = [
   "public/index.html",
+  "public/privacy.html",
   "public/resume.html",
+  "public/terms.html",
+  "public/legal.css",
   "public/styles.css",
   "public/resume.css",
   "public/app.js",
