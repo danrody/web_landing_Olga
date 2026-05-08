@@ -836,7 +836,7 @@ body {
 .mobile-alumni-marquee-track {
   display: flex;
   width: max-content;
-  gap: 18px;
+  gap: 10px;
   align-items: center;
   padding: 28px 0;
   animation: alumni-marquee 24s linear infinite;
@@ -845,8 +845,8 @@ body {
 .mobile-alumni-logo {
   display: grid;
   place-items: center;
-  width: 138px;
-  height: 76px;
+  width: 150px;
+  height: 82px;
   flex: 0 0 auto;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.88);
@@ -854,8 +854,8 @@ body {
 
 .mobile-alumni-logo img {
   display: block;
-  max-width: 112px;
-  max-height: 52px;
+  max-width: 134px;
+  max-height: 64px;
   object-fit: contain;
 }
 
