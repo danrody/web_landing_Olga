@@ -1959,7 +1959,7 @@
               "children": [
                 {
                   "id": "2015:1696",
-                  "name": "CARRERDRIVE FIND YOUR PASS FUEL YOUR FUTURE",
+                  "name": "CAREERDRIVE FIND YOUR PASS FUEL YOUR FUTURE",
                   "type": "TEXT",
                   "x": 0,
                   "y": -9,
@@ -1978,7 +1978,7 @@
                   "style": {
                     "background": "rgba(19, 19, 19, 1)"
                   },
-                  "text": "CARRERDRIVE\nFIND YOUR PASS\nFUEL YOUR FUTURE",
+                  "text": "CAREERDRIVE\nFIND YOUR PASS\nFUEL YOUR FUTURE",
                   "textStyle": {
                     "color": "rgba(19, 19, 19, 1)",
                     "fontFamily": "Inter",
@@ -1991,7 +1991,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "CARRERDRIVE\n",
+                      "text": "CAREERDRIVE\n",
                       "style": {
                         "color": "rgba(24, 0, 173, 1)",
                         "fontFamily": "Inter",
@@ -4710,7 +4710,7 @@
               "children": [
                 {
                   "id": "2015:2416",
-                  "name": "© CARRERDRIVE, 2026",
+                  "name": "© CAREERDRIVE, 2026",
                   "type": "TEXT",
                   "x": 50,
                   "y": 77,
@@ -4729,7 +4729,7 @@
                   "style": {
                     "background": "rgba(255, 255, 255, 0.4)"
                   },
-                  "text": "© CARRERDRIVE, 2026",
+                  "text": "© CAREERDRIVE, 2026",
                   "textStyle": {
                     "color": "rgba(255, 255, 255, 0.4)",
                     "fontFamily": "Manrope",
@@ -4742,7 +4742,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "© CARRERDRIVE, 2026",
+                      "text": "© CAREERDRIVE, 2026",
                       "style": {
                         "color": "rgba(255, 255, 255, 0.4)",
                         "fontFamily": "Manrope",
@@ -5163,7 +5163,7 @@
                 },
                 {
                   "id": "2019:2",
-                  "name": "CARRERDRIVE",
+                  "name": "CAREERDRIVE",
                   "type": "TEXT",
                   "x": -81,
                   "y": 298,
@@ -5182,7 +5182,7 @@
                   "style": {
                     "background": "rgba(179, 186, 254, 1)"
                   },
-                  "text": "CARRERDRIVE",
+                  "text": "CAREERDRIVE",
                   "textStyle": {
                     "color": "rgba(179, 186, 254, 1)",
                     "fontFamily": "Inter",
@@ -5195,7 +5195,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "CARRERDRIVE",
+                      "text": "CAREERDRIVE",
                       "style": {
                         "color": "rgba(179, 186, 254, 1)",
                         "fontFamily": "Inter",
@@ -6466,7 +6466,7 @@
                 },
                 {
                   "id": "2015:2111",
-                  "name": "3 sessions",
+                  "name": "",
                   "type": "TEXT",
                   "x": 930.21,
                   "y": 29.99,
@@ -6485,7 +6485,7 @@
                   "style": {
                     "background": "rgba(19, 19, 19, 1)"
                   },
-                  "text": "3 sessions",
+                  "text": "",
                   "textStyle": {
                     "color": "rgba(19, 19, 19, 1)",
                     "fontFamily": "Manrope",
@@ -6498,7 +6498,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "3 sessions",
+                      "text": "",
                       "style": {
                         "color": "rgba(19, 19, 19, 1)",
                         "fontFamily": "Manrope",
@@ -6838,7 +6838,7 @@
                 },
                 {
                   "id": "2062:24",
-                  "name": "3 sessions",
+                  "name": "",
                   "type": "TEXT",
                   "x": 930.21,
                   "y": 29.99,
@@ -6857,7 +6857,7 @@
                   "style": {
                     "background": "rgba(19, 19, 19, 1)"
                   },
-                  "text": "3 sessions",
+                  "text": "",
                   "textStyle": {
                     "color": "rgba(19, 19, 19, 1)",
                     "fontFamily": "Manrope",
@@ -6870,7 +6870,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "3 sessions",
+                      "text": "",
                       "style": {
                         "color": "rgba(19, 19, 19, 1)",
                         "fontFamily": "Manrope",
@@ -7210,7 +7210,7 @@
                 },
                 {
                   "id": "2015:2122",
-                  "name": "2 sessions",
+                  "name": "",
                   "type": "TEXT",
                   "x": 929.92,
                   "y": 30,
@@ -7229,7 +7229,7 @@
                   "style": {
                     "background": "rgba(19, 19, 19, 1)"
                   },
-                  "text": "2 sessions",
+                  "text": "",
                   "textStyle": {
                     "color": "rgba(19, 19, 19, 1)",
                     "fontFamily": "Manrope",
@@ -7242,7 +7242,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "2 sessions",
+                      "text": "",
                       "style": {
                         "color": "rgba(19, 19, 19, 1)",
                         "fontFamily": "Manrope",
@@ -7258,7 +7258,7 @@
                 },
                 {
                   "id": "2015:2123",
-                  "name": "'Entry ticket and  Steering wheel' for your Career",
+                  "name": "'Entry ticket and  Fuel' for your Career",
                   "type": "TEXT",
                   "x": 20,
                   "y": 83.99,
@@ -7277,7 +7277,7 @@
                   "style": {
                     "background": "rgba(19, 19, 19, 1)"
                   },
-                  "text": "'Entry ticket and  Steering wheel' for your Career",
+                  "text": "'Entry ticket and  Fuel' for your Career",
                   "textStyle": {
                     "color": "rgba(19, 19, 19, 1)",
                     "fontFamily": "Manrope",
@@ -7290,7 +7290,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "'Entry ticket and  Steering wheel' for your Career",
+                      "text": "'Entry ticket and  Fuel' for your Career",
                       "style": {
                         "color": "rgba(19, 19, 19, 1)",
                         "fontFamily": "Manrope",
@@ -7582,7 +7582,7 @@
                 },
                 {
                   "id": "2062:35",
-                  "name": "2 sessions",
+                  "name": "",
                   "type": "TEXT",
                   "x": 929.92,
                   "y": 30,
@@ -7601,7 +7601,7 @@
                   "style": {
                     "background": "rgba(19, 19, 19, 1)"
                   },
-                  "text": "2 sessions",
+                  "text": "",
                   "textStyle": {
                     "color": "rgba(19, 19, 19, 1)",
                     "fontFamily": "Manrope",
@@ -7614,7 +7614,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "2 sessions",
+                      "text": "",
                       "style": {
                         "color": "rgba(19, 19, 19, 1)",
                         "fontFamily": "Manrope",
@@ -7954,7 +7954,7 @@
                 },
                 {
                   "id": "2015:2133",
-                  "name": "3 sessions",
+                  "name": "",
                   "type": "TEXT",
                   "x": 930.21,
                   "y": 29.99,
@@ -7973,7 +7973,7 @@
                   "style": {
                     "background": "rgba(19, 19, 19, 1)"
                   },
-                  "text": "3 sessions",
+                  "text": "",
                   "textStyle": {
                     "color": "rgba(19, 19, 19, 1)",
                     "fontFamily": "Manrope",
@@ -7986,7 +7986,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "3 sessions",
+                      "text": "",
                       "style": {
                         "color": "rgba(19, 19, 19, 1)",
                         "fontFamily": "Manrope",
@@ -8732,7 +8732,7 @@
       "children": [
         {
           "id": "2133:7",
-          "name": "CARRERDRIVE FIND YOUR PASS FUEL YOUR FUTURE",
+          "name": "CAREERDRIVE FIND YOUR PASS FUEL YOUR FUTURE",
           "type": "TEXT",
           "x": 13,
           "y": 91,
@@ -8751,7 +8751,7 @@
           "style": {
             "background": "rgba(19, 19, 19, 1)"
           },
-          "text": "CARRERDRIVE\nFIND YOUR PASS\nFUEL YOUR FUTURE",
+          "text": "CAREERDRIVE\nFIND YOUR PASS\nFUEL YOUR FUTURE",
           "textStyle": {
             "color": "rgba(19, 19, 19, 1)",
             "fontFamily": "Inter",
@@ -8764,7 +8764,7 @@
           },
           "textRuns": [
             {
-              "text": "CARRERDRIVE\n",
+              "text": "CAREERDRIVE\n",
               "style": {
                 "color": "rgba(0, 0, 0, 1)",
                 "fontFamily": "Inter",
@@ -12670,7 +12670,7 @@
                 },
                 {
                   "id": "2150:392",
-                  "name": "3 sessions",
+                  "name": "",
                   "type": "TEXT",
                   "x": 930.21,
                   "y": 29.99,
@@ -12689,7 +12689,7 @@
                   "style": {
                     "background": "rgba(19, 19, 19, 1)"
                   },
-                  "text": "3 sessions",
+                  "text": "",
                   "textStyle": {
                     "color": "rgba(19, 19, 19, 1)",
                     "fontFamily": "Manrope",
@@ -12702,7 +12702,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "3 sessions",
+                      "text": "",
                       "style": {
                         "color": "rgba(19, 19, 19, 1)",
                         "fontFamily": "Manrope",
@@ -13172,7 +13172,7 @@
                 },
                 {
                   "id": "2150:403",
-                  "name": "2 sessions",
+                  "name": "",
                   "type": "TEXT",
                   "x": 929.92,
                   "y": 30,
@@ -13191,7 +13191,7 @@
                   "style": {
                     "background": "rgba(19, 19, 19, 1)"
                   },
-                  "text": "2 sessions",
+                  "text": "",
                   "textStyle": {
                     "color": "rgba(19, 19, 19, 1)",
                     "fontFamily": "Manrope",
@@ -13204,7 +13204,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "2 sessions",
+                      "text": "",
                       "style": {
                         "color": "rgba(19, 19, 19, 1)",
                         "fontFamily": "Manrope",
@@ -13220,7 +13220,7 @@
                 },
                 {
                   "id": "2150:404",
-                  "name": "Entry ticket and  Steering wheel' for your Career",
+                  "name": "Entry ticket and  Fuel' for your Career",
                   "type": "TEXT",
                   "x": 18,
                   "y": 76,
@@ -13239,7 +13239,7 @@
                   "style": {
                     "background": "rgba(19, 19, 19, 1)"
                   },
-                  "text": "Entry ticket and  Steering wheel' for your Career",
+                  "text": "Entry ticket and  Fuel' for your Career",
                   "textStyle": {
                     "color": "rgba(19, 19, 19, 1)",
                     "fontFamily": "Manrope",
@@ -13252,7 +13252,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "Entry ticket and  Steering wheel' for your Career",
+                      "text": "Entry ticket and  Fuel' for your Career",
                       "style": {
                         "color": "rgba(19, 19, 19, 1)",
                         "fontFamily": "Manrope",
@@ -13674,7 +13674,7 @@
                 },
                 {
                   "id": "2150:414",
-                  "name": "2 sessions",
+                  "name": "",
                   "type": "TEXT",
                   "x": 929.92,
                   "y": 30,
@@ -13693,7 +13693,7 @@
                   "style": {
                     "background": "rgba(19, 19, 19, 1)"
                   },
-                  "text": "2 sessions",
+                  "text": "",
                   "textStyle": {
                     "color": "rgba(19, 19, 19, 1)",
                     "fontFamily": "Manrope",
@@ -13706,7 +13706,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "2 sessions",
+                      "text": "",
                       "style": {
                         "color": "rgba(19, 19, 19, 1)",
                         "fontFamily": "Manrope",
@@ -14176,7 +14176,7 @@
                 },
                 {
                   "id": "2150:425",
-                  "name": "3 sessions",
+                  "name": "",
                   "type": "TEXT",
                   "x": 930.21,
                   "y": 29.99,
@@ -14195,7 +14195,7 @@
                   "style": {
                     "background": "rgba(19, 19, 19, 1)"
                   },
-                  "text": "3 sessions",
+                  "text": "",
                   "textStyle": {
                     "color": "rgba(19, 19, 19, 1)",
                     "fontFamily": "Manrope",
@@ -14208,7 +14208,7 @@
                   },
                   "textRuns": [
                     {
-                      "text": "3 sessions",
+                      "text": "",
                       "style": {
                         "color": "rgba(19, 19, 19, 1)",
                         "fontFamily": "Manrope",
@@ -15098,7 +15098,7 @@
                       "children": [
                         {
                           "id": "2153:6",
-                          "name": "© CARRERDRIVE, 2026",
+                          "name": "© CAREERDRIVE, 2026",
                           "type": "TEXT",
                           "x": 0,
                           "y": 0,
@@ -15117,7 +15117,7 @@
                           "style": {
                             "background": "rgba(255, 255, 255, 0.4)"
                           },
-                          "text": "© CARRERDRIVE, 2026",
+                          "text": "© CAREERDRIVE, 2026",
                           "textStyle": {
                             "color": "rgba(255, 255, 255, 0.4)",
                             "fontFamily": "Manrope",
@@ -15143,7 +15143,7 @@
                               }
                             },
                             {
-                              "text": "CARRERDRIVE",
+                              "text": "CAREERDRIVE",
                               "style": {
                                 "color": "rgba(255, 255, 255, 0.4)",
                                 "fontFamily": "Manrope",
@@ -15825,7 +15825,7 @@
         },
         {
           "id": "2153:37",
-          "name": "CARRERDRIVE",
+          "name": "CAREERDRIVE",
           "type": "TEXT",
           "x": -15,
           "y": 5107,
@@ -15844,7 +15844,7 @@
           "style": {
             "background": "rgba(179, 186, 254, 1)"
           },
-          "text": "CARRERDRIVE",
+          "text": "CAREERDRIVE",
           "textStyle": {
             "color": "rgba(179, 186, 254, 1)",
             "fontFamily": "Inter",
@@ -15857,7 +15857,7 @@
           },
           "textRuns": [
             {
-              "text": "CARRERDRIVE",
+              "text": "CAREERDRIVE",
               "style": {
                 "color": "rgba(179, 186, 254, 1)",
                 "fontFamily": "Inter",

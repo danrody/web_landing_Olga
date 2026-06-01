@@ -111,13 +111,466 @@ const AFTER_CURRICULUM_IDS = {
 };
 
 const CURRICULUM_EXPANSION_HEIGHT = {
-  desktop: 174,
-  mobile: 156
+  desktop: 370,
+  mobile: 380
 };
 
 const CURRICULUM_LAYOUT_MOTION = {
   duration: 0.92,
   ease: "power3.inOut"
+};
+
+const CURRICULUM_DETAIL_CONTENT = {
+  "01": {
+    inDetails: [
+      "The Modern World of Work",
+      "Game Over for the \"One Life, One Job\" Rule.",
+      "Diploma as a Swiss Army Knife",
+      "Portfolio of Professional Selves",
+      "Career as an Architect of daily life",
+      "Career resilience begins with knowing yourself"
+    ],
+    outputs: [
+      "Multi-path reality of the modern workplace.",
+      "University degree is a powerful launchpad for diverse trajectories",
+      "Seeing work as life design project",
+      "Self-awareness: first step in career design",
+      "Main lasting career skill — ability to learn"
+    ]
+  },
+  "02": {
+    inDetails: [
+      "Work as Life Design Project",
+      "Beyond the Paycheck: The Deeper Returns of Work",
+      "Positive Psychology concept about Meaning of Work",
+      "The Ikigai Model of Successful Career: Coherence between your profession and your personality"
+    ],
+    outputs: [
+      "Reframe work as a key part of life design, not just a means for a paycheck",
+      "Students’ audit their needs to create personal \"blueprint\" for meaningful work",
+      "The Tool: Personal Ikigai map to evaluate career coherence"
+    ]
+  },
+  "03": {
+    inDetails: [
+      "The Model of Personal Career Capital",
+      "Self-reflection as key capability for meaningful career choice",
+      "Core Strength and Transferable Skills",
+      "Professional Interest as a Renewable source of working energy"
+    ],
+    outputs: [
+      "Skills, Strength and Interest Inventory",
+      "Confidently name superpower and drivers",
+      "Know personal Source of Energy for doing job tasks"
+    ]
+  },
+  "04": {
+    inDetails: [
+      "Building Career with Purpose and Satisfaction",
+      "Motivation and Core values are hidden engine for our careers",
+      "Inner Compass to make Career Choices"
+    ],
+    outputs: [
+      "Motivation and Values Inventory",
+      "Full scope of Professional DNA definition",
+      "Learn to build career resilience from within",
+      "Career’s true safety starts with internal resources not with unreliable external factors"
+    ]
+  },
+  "05": {
+    inDetails: [
+      "Career Construction Interview",
+      "Who did you admire when you were growing up?",
+      "What kind of media do you read or watch regularly?",
+      "What is your favorite book or movie?",
+      "Tell me your favorite saying or motto",
+      "What are your Earliest Recollections?"
+    ],
+    outputs: ["Creation Coherent Career Story"]
+  },
+  "06": {
+    inDetails: [
+      "Designing Alternative Life Scenarios",
+      "Reality-tested Career options",
+      "The Ultimate Career Skill for the evolving labor market is Continuous Learning",
+      "Research on labor market trends",
+      "Opportunity Spotting for Next Career Moves"
+    ],
+    outputs: [
+      "Target Roles or Professional Fields Short list",
+      "Three viable career paths",
+      "Patterns recognition in professional journey, enabling career decisions",
+      "Proactive mindset for managing future career",
+      "Labor market research summary with trend analysis",
+      "Emerging career opportunities evaluation"
+    ]
+  },
+  "07": {
+    inDetails: [
+      "Your Career Currency: Hard Skills vs Transferable Skills",
+      "Learning Agility as Core Adaptive Capability",
+      "Master Skills for Career Navigation and Growth",
+      "Development plan addressing both technical and transferable skills.",
+      "Low-risk experiments to test Career Assumption"
+    ],
+    outputs: [
+      "Current and future skill gaps relative to target roles",
+      "Reframe challenges into learning opportunities",
+      "Decision-making plan to evaluate career choices",
+      "Start Self-directed Upskilling for Future job (projects, volunteering)"
+    ]
+  },
+  "08": {
+    inDetails: [
+      "Methods and Tools for Employment.",
+      "Network and Relationship Capital",
+      "Role Model’s impact on Careers. Mentoring.",
+      "Informational Interviews",
+      "Personal marketing. CV.",
+      "Careers in different organizations"
+    ],
+    outputs: [
+      "Network map with outreach targets",
+      "Ability to act intentionally rather than reactively for career decisions",
+      "Navigation toolkit for career decisions",
+      "Confidence in Career Choices"
+    ]
+  }
+};
+
+const RUSSIAN_TEXT_BY_ID = {
+  "2016:11": "Программа",
+  "2016:12": "Обо мне",
+  "2016:14": "Отзывы",
+  "2016:16": "Найди свой путь Запусти будущее",
+  "2015:1696": "CAREERDRIVE\nНАЙДИ СВОЙ ПУТЬ\nСТРОЙ БУДУЩЕЕ",
+  "2015:1701": "сессий",
+  "2015:1703": "Очн",
+  "2015:1705": "группы",
+  "2015:1724": "Вып.",
+  "2015:1726": "Содержание",
+  "2015:1697": "Как выбрать карьерный путь?",
+  "2019:33":
+    "Времена одной работы на всю жизнь прошли. Сегодня карьера петляет и трансформируется. Одни профессии исчезают, зато появляются новые. Большинство людей несколько раз сменят роль, отрасль или даже сферу деятельности — не потому, что не справились, а потому что так устроен мир.",
+  "2106:5": "Как построить карьеру, которая выдержит перемены?",
+  "2106:6": "Ответ — не в самой надёжной работе. Сила в вас: карьерная гибкость и устойчивость.",
+  "2061:4":
+    "Каждый учащийся — в школе, колледже или университете — заслуживает не просто академических знаний, а инструментов для развития этих качеств. А каждый профессионал заслуживает знаний о том, как делать осмысленные выборы в карьере и управлять ею на протяжении всей жизни.",
+  "2105:4": "Это как раз то, что предлагает эта программа",
+  "2106:10": "Содержание",
+  "2018:9": "Выпускники",
+  "2018:10": "Программы успешно окончили более 200 учащихся и более 150 студентов университетов.",
+  "2062:65": "Вы не одни.",
+  "2015:1839": "Почему я создала эту программу.",
+  "2015:1844": "Ольга Перекопская",
+  "2018:86": "HR Директор по обучению и развитию",
+  "2106:13": "Врач-психотерапевт",
+  "2106:12": "Карьерный консультант",
+  "2015:1850": "Образование.",
+  "2015:1856": "Опыт работы.",
+  "2015:1840":
+    "Каждый ваш вопрос о карьере откликался и мне когда-то. Я знала и тупики, и карьерные взлёты. Я меняла профессии, города и страны в поисках лучшей работы. На этом пути я усвоила одно: метод проб и ошибок — медленный учитель.",
+  "2018:90":
+    "Я изучала теорию и практику карьеры у ведущих экспертов США и Европы. Эти знания стали ключом к осмыслению моего собственного пути — и инструментом, который теперь помогает другим. Я помогла сотням людей выйти из карьерных тупиков. Студенты находят свой путь. Специалисты заново обретают цель. Я убеждена: ваш карьерный путь будет яснее, полнее и осмысленнее — когда у вас есть верная система координат и способность делать осознанный выбор.",
+  "2019:27": "Подробнее обо мне",
+  "2015:1893": "РЕАЛЬНЫЕ РЕЗУЛЬТАТЫ. РЕАЛЬНЫЕ ЛЮДИ. ЧТО ГОВОРЯТ УЧЕНИКИ И УЧИТЕЛЯ.",
+  "2015:1906": "Альберт",
+  "2015:1907": "Выпускник, Москва",
+  "2015:1909":
+    "Я пришёл к Ольге, выбирая между стоматологией, кибербезопасностью и биотехом. Она не просто провела тест — помогла увидеть мою историю. Так я выбрал вычислительную математику и кибернетику с будущим в финтехе.",
+  "2015:1912": "Александра",
+  "2015:1913": "Ученица, Мадрид",
+  "2015:1915":
+    "Переезд и новая школьная система перевернули мои планы. Я разрывалась между техническим и творческим направлением. Работа с Ольгой дала ясность, уверенность и реальный план будущего, которое ощущается моим.",
+  "2015:1918": "Елена В.",
+  "2015:1919": "Учитель, 24 ученика",
+  "2015:1921":
+    "Курс дал моим ученикам то, чего не давал ни один тест: ответственность за будущее. Я видела, как растерянность и «безопасные» варианты сменились ясностью, уверенностью и доверием к себе.",
+  "2015:2418": "WhatsApp для контакта",
+  "2015:2423": "Социальные сети:",
+  "2015:2425": "Документы:",
+  "2015:2426": "Политика конфиденциальности",
+  "2015:2427": "Условия и оферта",
+  "2015:2075": "Описание программы",
+  "2133:3": "Выберите формат:",
+  "2015:2079":
+    "Индивидуальные консультации — Персональное сопровождение в удобном для вас темпе\nГрупповая программа — Обучение в группе, онлайн или очно\nГибкий курс из 8 модулей — Освоение модулей в нужном темпе\nДвухдневный интенсив — Опыт быстрого и глубокого погружения в обучение",
+  "2015:2099": "Новая реальность",
+  "2015:2100": "1 сессия",
+  "2015:2101": "Не лестница, а пространство для манёвров",
+  "2015:2110": "Карьерный компас",
+  "2015:2112": "Стратегия выбора карьерного пути",
+  "2015:2121": "Самопознание",
+  "2015:2123": "Входной билет и движущая сила карьеры",
+  "2015:2132": "Управление карьерой",
+  "2015:2134": "Фильтры для осознанных выборов",
+  "2015:2143": "Менторская сессия",
+  "2015:2144": "1 сессия",
+  "2015:2145": "Построение карьерного нарратива",
+  "2062:12": "Дизайн",
+  "2062:13": "1 сессия",
+  "2062:14": "Устойчивость карьеры: развиваем адаптивное мышление",
+  "2062:23": "Карьерные навыки",
+  "2062:25": "Встречай новую главу в карьере новой версией себя каждый раз",
+  "2062:34": "Востребованность",
+  "2062:36": "Социальный капитал и персональный маркетинг",
+  "2133:7": "CAREERDRIVE\nНАЙДИ СВОЙ ПУТЬ\nСТРОЙ БУДУЩЕЕ",
+  "2133:9": "Найди свой путь Запусти будущее",
+  "2133:12": "Модули",
+  "2133:13": "Выпускники",
+  "2133:14": "Программы успешно окончили более 200 учащихся и более 150 студентов университетов.",
+  "2140:17": "Вып.",
+  "2140:3": "сессий",
+  "2140:5": "Очн",
+  "2140:6": "группы",
+  "2149:108": "Ольга Перекопская",
+  "2149:110": "Москва",
+  "2149:113":
+    "Каждый ваш вопрос о карьере откликался и мне когда-то. Я знала и тупики, и карьерные взлёты. Я меняла профессии, города и страны в поисках лучшей работы. На этом пути я усвоила одно: метод проб и ошибок — медленный учитель. Я изучала теорию и практику карьеры у ведущих экспертов США и Европы. Эти знания стали ключом к осмыслению моего собственного пути — и инструментом, который теперь помогает другим.",
+  "2149:121": "Образование.",
+  "2149:130": "Опыт работы.",
+  "2149:143": "LinkedIn",
+  "2150:350": "Описание программы",
+  "2150:352": "Выберите формат:",
+  "2150:353":
+    "Индивидуальные консультации — Персональное сопровождение в удобном для вас темпе\nГрупповая программа — Обучение в группе, онлайн или очно\nГибкий курс из 8 модулей — Освоение модулей в нужном темпе\nДвухдневный интенсив — Опыт быстрого и глубокого погружения в обучение",
+  "2150:358": "Новая реальность",
+  "2150:359": "1 сессия",
+  "2150:360": "Не лестница, а пространство для манёвров",
+  "2150:369": "Дизайн",
+  "2150:370": "1 сессия",
+  "2150:371": "Устойчивость карьеры: развиваем адаптивное мышление",
+  "2150:380": "Карьерный компас",
+  "2150:382": "Стратегия выбора карьерного пути",
+  "2150:391": "Карьерные навыки",
+  "2150:393": "Встречай новую главу в карьере новой версией себя каждый раз",
+  "2150:402": "Самопознание",
+  "2150:404": "Входной билет и движущая сила карьеры",
+  "2150:413": "Востребованность",
+  "2150:415": "Социальный капитал и персональный маркетинг",
+  "2150:424": "Управление карьерой",
+  "2150:426": "Фильтры для осознанных выборов",
+  "2150:435": "Менторская сессия",
+  "2150:436": "1 сессия",
+  "2150:437": "Построение карьерного нарратива",
+  "2153:11": "WhatsApp для контакта",
+  "2153:17": "Социальные сети:",
+  "2153:22": "Документы:",
+  "2153:25": "Политика конфиденциальности",
+  "2153:27": "Условия и оферта",
+  "2154:3":
+    "Времена одной работы на всю жизнь прошли. Сегодня карьера петляет и трансформируется. Одни профессии исчезают, зато появляются новые. Большинство людей несколько раз сменят роль, отрасль или даже сферу деятельности — не потому, что не справились, а потому что так устроен мир. Как создать карьеру, которая устоит, если ничто не стоит на месте? Это как раз то, что предлагает эта программа.",
+  "2159:5": "РЕЗУЛЬТАТЫ",
+  "2159:27": "Альберт",
+  "2159:29": "Выпускник, Москва",
+  "2159:32":
+    "У меня было много интересов, но не было ясного направления. Работа с Ольгой помогла понять, что важно, и выбрать неожиданный путь: вычислительную математику и финтех."
+};
+
+const RUSSIAN_TEXT_RUNS_BY_ID = {
+  "2015:1696": ["CAREERDRIVE\n", "НАЙДИ СВОЙ ПУТЬ\nСТРОЙ БУДУЩЕЕ"],
+  "2133:7": ["CAREERDRIVE\n", "НАЙДИ СВОЙ ПУТЬ\nСТРОЙ БУДУЩЕЕ"],
+  "2016:16": ["Найди свой путь", " ", "Запусти будущее"],
+  "2133:9": ["Найди свой путь", " ", "Запусти будущее"],
+  "2019:33": [
+    "Времена ",
+    "одной работы на всю жизнь",
+    " прошли. Сегодня карьера ",
+    "петляет и трансформируется.",
+    " Одни профессии исчезают, зато появляются новые. Большинство людей несколько раз сменят роль, отрасль или даже сферу деятельности — не потому, что не справились, а потому что ",
+    "так устроен мир."
+  ],
+  "2061:4": [
+    "Каждый учащийся — в школе, колледже или университете — заслуживает не только академических знаний, но и инструментов для развития этих качеств.",
+    " ",
+    "А каждый профессионал заслуживает знаний о том, как делать ",
+    "осмысленные выборы в карьере",
+    " и ",
+    "управлять ею всю жизнь."
+  ],
+  "2015:1840": [
+    "Каждый ваш вопрос о карьере откликался и мне когда-то.\n \nЯ знала и тупики, и карьерные взлёты. Я меняла профессии, города и страны в поисках лучшей работы. На этом пути я усвоила одно: ",
+    "метод проб и ошибок — медленный учитель."
+  ],
+  "2018:90": [
+    "Я изучала",
+    " теорию и практику карьеры",
+    " у ведущих экспертов США и Европы. Эти знания стали ключом к осмыслению моего собственного пути — и инструментом, который теперь помогает другим.\nЯ помогла",
+    " сотням людей",
+    " выйти из карьерных тупиков. Студенты ",
+    "находят свой путь",
+    ". Специалисты ",
+    "заново обретают цель.\n",
+    "Я убеждена: ваш",
+    " карьерный путь будет яснее, полнее,",
+    " и осмысленнее — когда у вас есть ",
+    "верная система координат",
+    " и ",
+    "способность делать осознанный выбор."
+  ],
+  "2149:113": [
+    "Каждый вопрос",
+    " о карьере — ",
+    "я тоже проживала",
+    ".\nЯ знала ",
+    "тупики и прорывы",
+    ", меняла профессии, города и страны в поисках лучшей работы. На этом пути я поняла: ",
+    "метод проб и ошибок — медленный учитель.\n",
+    "Я изучала теорию и практику карьеры у ведущих экспертов ",
+    "США и Европы",
+    ". Эти знания дали смысл моему пути — и теперь помогают другим найти",
+    " ясность, направление и цель",
+    "."
+  ],
+  "2015:2079": [
+    " \t",
+    "Лично",
+    " — \tПерсональное сопровождение в удобном темпе\n \t",
+    "Группа",
+    " — \tОнлайн или очно, вместе с участниками\n \t",
+    "8 модулей",
+    " — \tОсвоение программы в своём темпе\n \t",
+    "2-дневный интенсив",
+    " — \tБыстрое глубокое погружение"
+  ],
+  "2150:353": [
+    " \t",
+    "Лично",
+    " — \tПерсональное сопровождение в удобном темпе\n \t",
+    "Группа",
+    " — \tОнлайн или очно, вместе с участниками\n \t",
+    "8 модулей",
+    " — \tОсвоение программы в своём темпе\n \t",
+    "2-дневный интенсив",
+    " — \tБыстрое глубокое погружение"
+  ],
+  "2154:3": [
+    "Работа ",
+    "на всю жизнь",
+    "\nбольше не норма.\nКарьера ",
+    "меняется\nи трансформируется.",
+    "\nПрофессии исчезают,\nновые появляются.\nЛюди меняют роли\nи сферы не раз — ",
+    "не из-за провала,\nа потому что мир меняется.",
+    "\nКак строить карьеру\nна годы перемен?\n",
+    "Этому учит программа."
+  ]
+};
+
+const RUSSIAN_CURRICULUM_DETAIL_CONTENT = {
+  "01": {
+    inDetails: [
+      "Современный рынок труда",
+      "Правило «одна жизнь — одна работа» больше не работает.",
+      "Диплом как швейцарский нож",
+      "Портфолио профессиональных личностей",
+      "Карьера как архитектор повседневности",
+      "Карьерная устойчивость начинается с понимания себя"
+    ],
+    outputs: [
+      "Современная реальность работы — нет единой дороги.",
+      "Университетский диплом — мощная стартовая площадка для разных траекторий.",
+      "Восприятие работы как проекта по дизайну всей жизни.",
+      "Осознание себя — первый шаг в проектировании карьеры.",
+      "Главный навык в карьере — умение учиться."
+    ]
+  },
+  "02": {
+    inDetails: [
+      "Работа как проект по конструированию всей жизни",
+      "Работа — нечто большее, чем деньги",
+      "Позитивная психология о роли работы в жизни человека",
+      "Модель Икигай для успешной карьеры: гармония профессии и личности"
+    ],
+    outputs: [
+      "Взгляд на работу как на часть жизни, а не просто источник дохода",
+      "Разбор потребностей как основы для смысла в будущей работе",
+      "Инструмент Карта Икигай: насколько профессия подходит вам"
+    ]
+  },
+  "03": {
+    inDetails: [
+      "Личный карьерный капитал: модель",
+      "Умение слышать себя — главный навык для выбора пути",
+      "Суперсила и универсальные навыки",
+      "Интерес к делу как неиссякаемый источник энергии движения"
+    ],
+    outputs: [
+      "Инвентаризация навыков, сильных сторон и интересов",
+      "Четкое определение своих сильных сторон и мотивов",
+      "Понимание того, откуда берется энергия для работы"
+    ]
+  },
+  "04": {
+    inDetails: [
+      "Построение карьеры со смыслом и удовлетворением",
+      "Мотивация и ценности — скрытый двигатель вашей карьеры",
+      "Внутренний компас для выбора верного пути"
+    ],
+    outputs: [
+      "Мотивация и ценности: полная картина",
+      "Полная расшифровка вашей профессиональной ДНК",
+      "Реальная опора построения надежной карьеры — внутренние ресурсы, а не внешние случайности"
+    ]
+  },
+  "05": {
+    inDetails: [
+      "Интервью по конструированию карьеры",
+      "Кем вы восхищались в детстве?",
+      "Какие медиа вы регулярно читаете или смотрите?",
+      "Какая у вас любимая книга или фильм?",
+      "Ваше любимое выражение или девиз?",
+      "Какие ваши самые ранние воспоминания?"
+    ],
+    outputs: ["Создание целостной карьерной истории"]
+  },
+  "06": {
+    inDetails: [
+      "Жизненные сценарии: альтернативное проектирование",
+      "Варианты карьеры: проверка на прочность реальностью",
+      "Главный навык в меняющемся мире — учиться постоянно",
+      "Анализ тенденций рынка труда",
+      "Как замечать карьерные возможности"
+    ],
+    outputs: [
+      "Краткий список целевых ролей и профессиональных сфер",
+      "Три реальных карьерных маршрута",
+      "Распознавание паттернов для осознанных карьерных выборов",
+      "Управление карьерой — умение мыслить на шаг вперед",
+      "Исследование рынка труда с анализом тенденций",
+      "Оценка своих карьерных возможностей"
+    ]
+  },
+  "07": {
+    inDetails: [
+      "Карьерная валюта: твердые и универсальные навыки",
+      "Главная адаптивная способность — учиться всегда",
+      "Ключевые навыки для карьерного роста и поиска работы",
+      "План развития с учетом технических и универсальных навыков",
+      "Эксперименты без риска — проверка карьерных гипотез"
+    ],
+    outputs: [
+      "Пробелы в навыках: где вы сейчас и где нужно быть",
+      "Превращение трудностей в шанс учиться новому",
+      "План принятия решений для оценки карьерных выборов",
+      "Подготовка к будущей работе через проекты и волонтёрство"
+    ]
+  },
+  "08": {
+    inDetails: [
+      "Методы и инструменты трудоустройства",
+      "Связи и отношения как капитал",
+      "Влияние ролевых моделей на карьеру. Наставничество",
+      "Информационное интервью",
+      "Персональный маркетинг. Резюме",
+      "Карьеры в организациях разного типа"
+    ],
+    outputs: [
+      "Карта контактов: с кем и зачем взаимодействовать",
+      "Умение выбирать самому, а не плыть по течению",
+      "Инструменты карьерной навигации",
+      "Уверенность в своем пути"
+    ]
+  }
 };
 
 const ALUMNI_LOGOS = [
@@ -202,11 +655,72 @@ const CAREER_CHALLENGE_CARDS = [
   }
 ];
 
+const RUSSIAN_CAREER_CHALLENGE_CARDS = [
+  {
+    title: "Вы выбираете профессию.",
+    subtitle: "Но понятия не имеете, что вам подходит"
+  },
+  {
+    title: "Множество интересов.",
+    subtitle: "Что из этого может стать работой?"
+  },
+  {
+    title: "Университет кажется ошибкой.",
+    subtitle: "Действительно ли это «ваш путь»?"
+  },
+  {
+    title: "Вы выбираете вуз или магистратуру.",
+    subtitle: ""
+  },
+  {
+    title: "Семья не перестаёт указывать, как вам жить.",
+    subtitle: ""
+  },
+  {
+    title: "Вы дали первой работе шанс.",
+    subtitle: "Теперь карьера кажется тупиком"
+  },
+  {
+    title: "Другие получают повышения.",
+    subtitle: "Вас обходят мимо — и вы не знаете почему"
+  },
+  {
+    title: "Вы мечтаете открыть своё дело.",
+    subtitle: "Но страх сдерживает"
+  },
+  {
+    title: "Вы хотите ускорить карьеру.",
+    subtitle: "Но следующий шаг — неясен"
+  }
+];
+
+const RUSSIAN_TESTIMONIALS = [
+  {
+    name: "Альберт",
+    role: "Выпускник, Москва",
+    text:
+      "У меня было много интересов, но не было ясного направления. Работа с Ольгой помогла понять, что важно, и выбрать неожиданный путь: вычислительную математику и финтех."
+  },
+  {
+    name: "Александра",
+    role: "Ученица, Мадрид",
+    text:
+      "Переезд и новая школьная система перевернули мои планы. Я разрывалась между техническим и творческим направлением. Работа с Ольгой дала ясность, уверенность и реальный план будущего, которое ощущается моим."
+  },
+  {
+    name: "Елена В.",
+    role: "Учитель, 24 ученика",
+    text:
+      "Курс дал моим ученикам то, чего не давал ни один тест: ответственность за будущее. Я видела, как растерянность и «безопасные» варианты сменились ясностью, уверенностью и доверием к себе."
+  }
+];
+
 let layoutData = null;
 let activeMode = "";
 let activeFrame = null;
 let activeStage = null;
 let activeScale = 1;
+let activeLanguage = getActiveLanguage();
 let mobileMenuPanel = null;
 let mobileMenuBackdrop = null;
 let dialogElement = null;
@@ -255,9 +769,21 @@ fetch("/layout-data.json")
   .then((response) => response.json())
   .then((data) => {
     layoutData = data;
+    applyPageLanguage();
     render();
     window.addEventListener("resize", render, { passive: true });
   });
+
+window.addEventListener("careerdrive:languagechange", (event) => {
+  const nextLanguage = event.detail?.language || getActiveLanguage();
+  if (nextLanguage === activeLanguage) {
+    return;
+  }
+
+  activeLanguage = nextLanguage;
+  applyPageLanguage();
+  rerenderForLanguage();
+});
 
 function render() {
   if (!layoutData) {
@@ -281,6 +807,34 @@ function render() {
   updateScale(activeFrame);
   updateCurriculumAccordions();
   queueMotionRefresh();
+}
+
+function rerenderForLanguage() {
+  if (!layoutData || !activeFrame) {
+    return;
+  }
+
+  const scrollY = window.scrollY;
+  teardownMotion();
+  app.replaceChildren(createShell(activeFrame));
+  updateScale(activeFrame);
+  updateCurriculumAccordions();
+  setupMotion();
+  window.scrollTo(0, scrollY);
+}
+
+function getActiveLanguage() {
+  return window.CareerDriveLanguage?.getLanguage?.() || "en";
+}
+
+function isRussianLanguage() {
+  return activeLanguage === "ru";
+}
+
+function applyPageLanguage() {
+  document.documentElement.lang = activeLanguage;
+  document.documentElement.dataset.language = activeLanguage;
+  document.title = isRussianLanguage() ? "CareerDrive — Найди свой путь" : "CareerDrive";
 }
 
 function chooseMode() {
@@ -445,7 +999,15 @@ function createText(node) {
   const content = document.createElement("span");
   content.className = "fig-text-content";
 
-  const runs = node.textRuns?.length ? node.textRuns : [{ text: node.text || "", style: node.textStyle || {} }];
+  const localizedRuns = getLocalizedTextRuns(node);
+  const localizedText = getLocalizedText(node);
+  const runs =
+    localizedRuns ||
+    (localizedText !== null
+      ? [{ text: localizedText, style: node.textRuns?.[0]?.style || node.textStyle || {} }]
+      : node.textRuns?.length
+        ? node.textRuns
+        : [{ text: node.text || "", style: node.textStyle || {} }]);
   for (const run of runs) {
     const span = document.createElement("span");
     span.textContent = run.text;
@@ -456,6 +1018,84 @@ function createText(node) {
   element.appendChild(content);
   applyResponsiveOverrides(element, node);
   return element;
+}
+
+function getLocalizedText(node) {
+  if (!isRussianLanguage()) {
+    return null;
+  }
+
+  return Object.prototype.hasOwnProperty.call(RUSSIAN_TEXT_BY_ID, node.id) ? RUSSIAN_TEXT_BY_ID[node.id] : null;
+}
+
+function getLocalizedTextRuns(node) {
+  if (!isRussianLanguage()) {
+    return null;
+  }
+
+  const localizedRuns = RUSSIAN_TEXT_RUNS_BY_ID[node.id];
+  if (!localizedRuns) {
+    return null;
+  }
+
+  return localizedRuns.map((text, index) => ({
+    text,
+    style: node.textRuns?.[index]?.style || node.textStyle || {}
+  }));
+}
+
+function getLocalizedCareerChallengeCards() {
+  if (!isRussianLanguage()) {
+    return CAREER_CHALLENGE_CARDS;
+  }
+
+  return CAREER_CHALLENGE_CARDS.map((card, index) => ({
+    ...card,
+    title: RUSSIAN_CAREER_CHALLENGE_CARDS[index]?.title ?? card.title,
+    subtitle: RUSSIAN_CAREER_CHALLENGE_CARDS[index]?.subtitle ?? card.subtitle
+  }));
+}
+
+function getLocalizedTestimonials() {
+  if (!isRussianLanguage()) {
+    return TESTIMONIALS;
+  }
+
+  return TESTIMONIALS.map((testimonial, index) => ({
+    ...testimonial,
+    name: RUSSIAN_TESTIMONIALS[index]?.name ?? testimonial.name,
+    role: RUSSIAN_TESTIMONIALS[index]?.role ?? testimonial.role,
+    text: RUSSIAN_TESTIMONIALS[index]?.text ?? testimonial.text
+  }));
+}
+
+function getCurriculumDetailContent(number) {
+  if (isRussianLanguage()) {
+    return RUSSIAN_CURRICULUM_DETAIL_CONTENT[number];
+  }
+
+  return CURRICULUM_DETAIL_CONTENT[number];
+}
+
+function getDocumentCopy(target) {
+  if (!isRussianLanguage()) {
+    return DOCUMENT_COPY[target];
+  }
+
+  const copies = {
+    privacy: {
+      title: "Политика конфиденциальности",
+      body:
+        "CareerDrive использует контактные данные только для ответа на запросы, коммуникации по программе и отправки релевантных обновлений курса. Через этот статический сайт не собираются платежные или чувствительные персональные данные."
+    },
+    terms: {
+      title: "Условия и оферта",
+      body:
+        "Материалы CareerDrive предоставляются для образовательной карьерной навигации. Участие не гарантирует поступление, трудоустройство или конкретный карьерный результат. Детали программы можно уточнить перед записью."
+    }
+  };
+
+  return copies[target];
 }
 
 function createVector(node) {
@@ -1033,7 +1673,7 @@ function runAction(action, node) {
   }
 
   if (action.type === "document") {
-    const documentCopy = DOCUMENT_COPY[action.target];
+    const documentCopy = getDocumentCopy(action.target);
     if (documentCopy) {
       showDialog(documentCopy.title, documentCopy.body);
     }
@@ -1207,13 +1847,23 @@ function createMobileMenu() {
   panel.setAttribute("aria-label", "Mobile navigation");
   panel.setAttribute("aria-hidden", "true");
 
-  for (const item of [
-    ["Program", "program"],
-    ["About me", "about"],
-    ["Curriculum", "curriculum"],
-    ["Testimonials", "testimonials"],
-    ["Contact", "contact"]
-  ]) {
+  const items = isRussianLanguage()
+    ? [
+        ["Программа", "program"],
+        ["Обо мне", "about"],
+        ["Содержание", "curriculum"],
+        ["Отзывы", "testimonials"],
+        ["Контакты", "contact"]
+      ]
+    : [
+        ["Program", "program"],
+        ["About me", "about"],
+        ["Curriculum", "curriculum"],
+        ["Testimonials", "testimonials"],
+        ["Contact", "contact"]
+      ];
+
+  for (const item of items) {
     const button = document.createElement("button");
     button.type = "button";
     button.textContent = item[0];
@@ -1267,7 +1917,7 @@ function createMobileTestimonials() {
   const strip = createOverlay("mobile-testimonial-strip", { x: 12, y: 4315, width: 296, height: 300 });
   strip.setAttribute("aria-label", "Testimonials");
 
-  for (const testimonial of TESTIMONIALS) {
+  for (const testimonial of getLocalizedTestimonials()) {
     const card = document.createElement("article");
     card.className = "mobile-testimonial-card";
 
@@ -1309,7 +1959,7 @@ function createCareerChallengeMarquee() {
   track.className = "career-challenge-track";
 
   for (let i = 0; i < 2; i += 1) {
-    for (const card of CAREER_CHALLENGE_CARDS) {
+    for (const card of getLocalizedCareerChallengeCards()) {
       track.appendChild(createCareerChallengeCard(card));
     }
   }
@@ -1351,7 +2001,7 @@ function createHeroWhatsAppButton() {
   button.setAttribute("aria-label", "Open WhatsApp for contact");
 
   const label = document.createElement("span");
-  label.textContent = "WhatsApp for contact";
+  label.textContent = isRussianLanguage() ? "WhatsApp для контакта" : "WhatsApp for contact";
   button.appendChild(label);
 
   const activate = (event) => {
@@ -1388,6 +2038,12 @@ function createCurriculumDetail(node) {
   detail.style.transform = cssMatrix([1, 0, 0, 1, 0, (node.height || 0) + 10]);
   detail.addEventListener("click", (event) => event.stopPropagation());
 
+  const detailContent = getCurriculumDetailContent(module.number);
+  if (detailContent) {
+    detail.appendChild(createCurriculumDetailGrid(detailContent));
+    return detail;
+  }
+
   const title = document.createElement("strong");
   title.textContent = module.title;
 
@@ -1396,6 +2052,34 @@ function createCurriculumDetail(node) {
 
   detail.append(title, body);
   return detail;
+}
+
+function createCurriculumDetailGrid(content) {
+  const grid = document.createElement("div");
+  grid.className = "curriculum-detail-grid";
+
+  for (const [label, items] of [
+    [isRussianLanguage() ? "Содержание детально" : "In details", content.inDetails],
+    [isRussianLanguage() ? "Результаты" : "Outputs", content.outputs]
+  ]) {
+    const column = document.createElement("section");
+    column.className = "curriculum-detail-column";
+
+    const heading = document.createElement("h4");
+    heading.textContent = label;
+
+    const list = document.createElement("ul");
+    for (const item of items) {
+      const listItem = document.createElement("li");
+      listItem.textContent = item;
+      list.appendChild(listItem);
+    }
+
+    column.append(heading, list);
+    grid.appendChild(column);
+  }
+
+  return grid;
 }
 
 function toggleMobileMenu() {
@@ -1498,11 +2182,13 @@ function animateCurriculumState(element, isExpanded) {
 
   if (isExpanded) {
     if (detail) {
+      gsap.set(detail, { visibility: "visible" });
       gsap.fromTo(
         detail,
-        { opacity: 0, clipPath: "inset(0% 0% 100% 0% round 20px)", filter: "blur(8px)" },
+        { opacity: 0, visibility: "visible", clipPath: "inset(0% 0% 100% 0% round 20px)", filter: "blur(8px)" },
         {
           opacity: 1,
+          visibility: "visible",
           clipPath: "inset(0% 0% 0% 0% round 20px)",
           filter: "blur(0px)",
           duration: 0.68,
@@ -1592,6 +2278,7 @@ function readModule(node) {
   const description = texts.filter((text) => text !== number && text !== title).join(". ");
 
   return {
+    number,
     title: `${number ? `${number}. ` : ""}${title || "Curriculum module"}`,
     body: description || "Curriculum module details."
   };
