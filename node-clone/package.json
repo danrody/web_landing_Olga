@@ -6,5 +6,8 @@
     "dev": "node server.js",
     "start": "node server.js",
     "check": "node scripts/check-static.mjs"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
   }
 }
