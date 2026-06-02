@@ -329,6 +329,32 @@ body {
   background: #151515;
 }
 
+[data-id="2019:24"],
+[data-id="2019:26"],
+[data-id="2015:1725"],
+[data-id="2015:2072"],
+[data-id="2106:9"],
+[data-id="2149:109"],
+[data-id="2149:119"],
+[data-id="2149:120"],
+[data-id="2149:128"],
+[data-id="2149:129"],
+[data-id="2149:138"],
+[data-id="2149:142"],
+[data-id="2153:3"],
+[data-id="2153:4"] {
+  overflow: visible !important;
+}
+
+[data-language="ru"] [data-id="2149:110"] *,
+[data-language="ru"] [data-id="2149:121"] *,
+[data-language="ru"] [data-id="2149:130"] *,
+[data-language="ru"] [data-id="2149:143"] * {
+  font-size: 15px !important;
+  line-height: 19px !important;
+  letter-spacing: 0 !important;
+}
+
 [data-id="2141:1312"].is-menu-open::before,
 [data-id="2141:1312"].is-menu-open::after {
   top: 21px;
@@ -457,9 +483,18 @@ body {
 [data-id="2149:104"],
 [data-id="2149:112"],
 [data-id="2149:113"],
+[data-id="2015:1838"],
+[data-id="2015:1842"],
+[data-id="2015:1837"],
 [data-id="2015:1892"],
 [data-id="2015:2071"],
+[data-id="2015:2415"],
+[data-id="2015:2120"],
+[data-id="2062:11"],
 [data-id="2150:347"],
+[data-id="2150:368"],
+[data-id="2153:5"],
+[data-id="2153:23"],
 [data-id="2159:3"],
 [data-id="2159:4"],
 [data-id="2159:5"] {
@@ -476,6 +511,795 @@ body {
 [data-id="2159:5"] * {
   font-size: 36px !important;
   line-height: 44px !important;
+}
+
+[data-language="ru"] [data-id="2016:16"] *,
+[data-language="ru"] [data-id="2133:9"] * {
+  font-size: 12px !important;
+  line-height: 18px !important;
+  letter-spacing: 0 !important;
+  text-align: center !important;
+}
+
+[data-language="ru"] [data-id="2016:16"],
+[data-language="ru"] [data-id="2133:9"] {
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+[data-language="ru"] [data-id="2016:16"] .fig-text-content,
+[data-language="ru"] [data-id="2133:9"] .fig-text-content {
+  text-align: center !important;
+}
+
+[data-language="ru"] [data-id="2133:9"] {
+  width: 171px !important;
+  height: 36px !important;
+  transform: matrix(1, 0, 0, 1, 0, 0) !important;
+}
+
+[data-language="ru"] [data-id="2133:9"] * {
+  font-size: 10.5px !important;
+  line-height: 15px !important;
+}
+
+[data-language="ru"] [data-id="2015:1696"] * {
+  font-size: 45px !important;
+  line-height: 50px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2133:7"] * {
+  font-size: 26px !important;
+  line-height: 31px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2133:12"] * {
+  line-height: 14px !important;
+}
+
+[data-language="ru"] [data-id="2133:12"] {
+  height: 30px !important;
+}
+
+[data-language="ru"] [data-id="2133:13"] * {
+  font-size: 34px !important;
+  line-height: 42px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2015:1726"] *,
+[data-language="ru"] [data-id="2106:10"] * {
+  font-size: 18px !important;
+  line-height: 20px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2015:1697"] {
+  z-index: 4;
+  width: 620px !important;
+  height: 66px !important;
+  transform: matrix(1, 0, 0, 1, 290, 694) !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+[data-language="ru"] [data-id="2015:1697"] *,
+[data-language="ru"] [data-id="2015:1697"] .fig-text-content {
+  font-size: 26px !important;
+  line-height: 32px !important;
+  text-align: center !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2015:1699"],
+[data-language="ru"] [data-id="2015:1701"] {
+  width: 96px !important;
+  height: 32px !important;
+  transform: matrix(1, 0, 0, 1, 30, 564.8) !important;
+}
+
+[data-language="ru"] [data-id="2015:1701"] {
+  transform: matrix(1, 0, 0, 1, 30, 599.2) !important;
+}
+
+[data-language="ru"] [data-id="2015:1703"],
+[data-language="ru"] [data-id="2015:1705"] {
+  width: 96px !important;
+  height: 32px !important;
+  transform: matrix(1, 0, 0, 1, 144.66, 564.8) !important;
+}
+
+[data-language="ru"] [data-id="2015:1705"] {
+  transform: matrix(1, 0, 0, 1, 144.66, 599.2) !important;
+}
+
+[data-language="ru"] [data-id="2015:1711"] {
+  width: 96px !important;
+  height: 32px !important;
+  transform: matrix(1, 0, 0, 1, 251.5, 564.44) !important;
+}
+
+[data-language="ru"] [data-id="2015:1722"],
+[data-language="ru"] [data-id="2015:1724"] {
+  width: 112px !important;
+  height: 32px !important;
+  transform: matrix(1, 0, 0, 1, 356, 565) !important;
+}
+
+[data-language="ru"] [data-id="2015:1724"] {
+  transform: matrix(1, 0, 0, 1, 356, 599.2) !important;
+}
+
+[data-language="ru"] [data-id="2015:1699"],
+[data-language="ru"] [data-id="2015:1701"],
+[data-language="ru"] [data-id="2015:1703"],
+[data-language="ru"] [data-id="2015:1705"],
+[data-language="ru"] [data-id="2015:1711"],
+[data-language="ru"] [data-id="2015:1722"],
+[data-language="ru"] [data-id="2015:1724"],
+[data-language="ru"] [data-id="2140:2"],
+[data-language="ru"] [data-id="2140:3"],
+[data-language="ru"] [data-id="2140:5"],
+[data-language="ru"] [data-id="2140:6"],
+[data-language="ru"] [data-id="2140:7"],
+[data-language="ru"] [data-id="2140:16"],
+[data-language="ru"] [data-id="2140:17"] {
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+[data-language="ru"] [data-id="2015:1699"] *,
+[data-language="ru"] [data-id="2015:1701"] *,
+[data-language="ru"] [data-id="2015:1703"] *,
+[data-language="ru"] [data-id="2015:1705"] *,
+[data-language="ru"] [data-id="2015:1711"] *,
+[data-language="ru"] [data-id="2015:1722"] *,
+[data-language="ru"] [data-id="2015:1724"] *,
+[data-language="ru"] [data-id="2140:2"] *,
+[data-language="ru"] [data-id="2140:3"] *,
+[data-language="ru"] [data-id="2140:5"] *,
+[data-language="ru"] [data-id="2140:6"] *,
+[data-language="ru"] [data-id="2140:7"] *,
+[data-language="ru"] [data-id="2140:16"] *,
+[data-language="ru"] [data-id="2140:17"] * {
+  text-align: center !important;
+}
+
+[data-language="ru"] [data-id="2015:1699"] .fig-text-content,
+[data-language="ru"] [data-id="2015:1701"] .fig-text-content,
+[data-language="ru"] [data-id="2015:1703"] .fig-text-content,
+[data-language="ru"] [data-id="2015:1705"] .fig-text-content,
+[data-language="ru"] [data-id="2015:1711"] .fig-text-content,
+[data-language="ru"] [data-id="2015:1722"] .fig-text-content,
+[data-language="ru"] [data-id="2015:1724"] .fig-text-content,
+[data-language="ru"] [data-id="2140:2"] .fig-text-content,
+[data-language="ru"] [data-id="2140:3"] .fig-text-content,
+[data-language="ru"] [data-id="2140:5"] .fig-text-content,
+[data-language="ru"] [data-id="2140:6"] .fig-text-content,
+[data-language="ru"] [data-id="2140:7"] .fig-text-content,
+[data-language="ru"] [data-id="2140:16"] .fig-text-content,
+[data-language="ru"] [data-id="2140:17"] .fig-text-content {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100% !important;
+}
+
+[data-language="ru"] [data-id="2140:2"],
+[data-language="ru"] [data-id="2140:3"] {
+  width: 86px !important;
+  height: 32px !important;
+  transform: matrix(1, 0, 0, 1, 12, 542) !important;
+}
+
+[data-language="ru"] [data-id="2140:3"] {
+  transform: matrix(1, 0, 0, 1, 12, 576.4) !important;
+}
+
+[data-language="ru"] [data-id="2140:5"],
+[data-language="ru"] [data-id="2140:6"] {
+  width: 86px !important;
+  height: 32px !important;
+  transform: matrix(1, 0, 0, 1, 122, 542) !important;
+}
+
+[data-language="ru"] [data-id="2140:6"] {
+  transform: matrix(1, 0, 0, 1, 122, 576.4) !important;
+}
+
+[data-language="ru"] [data-id="2140:7"] {
+  width: 86px !important;
+  height: 32px !important;
+  transform: matrix(1, 0, 0, 1, 122, 613.64) !important;
+}
+
+[data-language="ru"] [data-id="2140:16"],
+[data-language="ru"] [data-id="2140:17"] {
+  width: 106px !important;
+  height: 32px !important;
+  transform: matrix(1, 0, 0, 1, 12, 617) !important;
+}
+
+[data-language="ru"] [data-id="2140:17"] {
+  transform: matrix(1, 0, 0, 1, 12, 651.04) !important;
+}
+
+[data-language="ru"] [data-id="2019:33"] *,
+[data-language="ru"] [data-id="2106:5"] *,
+[data-language="ru"] [data-id="2106:6"] *,
+[data-language="ru"] [data-id="2061:4"] *,
+[data-language="ru"] [data-id="2105:4"] * {
+  font-size: 15px !important;
+  line-height: 22px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2019:33"],
+[data-language="ru"] [data-id="2061:4"],
+[data-language="ru"] [data-id="2015:1840"],
+[data-language="ru"] [data-id="2018:90"],
+[data-language="ru"] [data-id="2149:113"],
+[data-language="ru"] [data-id="2154:3"] {
+  align-items: flex-start !important;
+}
+
+[data-language="ru"] [data-id="2106:4"] {
+  height: 76px !important;
+}
+
+[data-language="ru"] [data-id="2106:5"] {
+  height: 44px !important;
+  transform: matrix(1, 0, 0, 1, 589, 974) !important;
+}
+
+[data-language="ru"] [data-id="2106:6"] {
+  height: 68px !important;
+}
+
+[data-language="ru"] [data-id="2062:65"] *,
+[data-language="ru"] [data-id="2015:1893"] * {
+  font-size: 38px !important;
+  line-height: 48px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2018:9"] {
+  width: 430px !important;
+  height: 88px !important;
+  transform: matrix(1, 0, 0, 1, 385, 0) !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+[data-language="ru"] [data-id="2018:9"] *,
+[data-language="ru"] [data-id="2018:9"] .fig-text-content {
+  text-align: center !important;
+}
+
+[data-language="ru"] [data-id="2018:88"],
+[data-language="ru"] [data-id="2018:88"] * {
+  font-size: 34px !important;
+  line-height: 48px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2018:86"] *,
+[data-language="ru"] [data-id="2106:12"] *,
+[data-language="ru"] [data-id="2106:13"] * {
+  font-size: 20px !important;
+  line-height: 24px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2015:1840"] *,
+[data-language="ru"] [data-id="2018:90"] * {
+  font-size: 16.5px !important;
+  line-height: 25px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2015:1840"] {
+  height: 132px !important;
+  transform: matrix(1, 0, 0, 1, 44, 468) !important;
+}
+
+[data-language="ru"] [data-id="2015:1844"] {
+  height: 72px !important;
+  transform: matrix(1, 0, 0, 1, 45, 386) !important;
+}
+
+[data-language="ru"] [data-id="2015:1844"] * {
+  line-height: 30px !important;
+}
+
+[data-language="ru"] [data-id="2018:90"] {
+  height: 250px !important;
+  transform: matrix(1, 0, 0, 1, 44, 610) !important;
+}
+
+[data-language="ru"] [data-id="2015:2075"] * {
+  font-size: 49px !important;
+  line-height: 56px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2015:2079"] {
+  width: 920px !important;
+  height: 128px !important;
+  transform: matrix(1, 0, 0, 1, 110, 174) !important;
+}
+
+[data-language="ru"] [data-id="2015:2079"] * {
+  font-size: 20px !important;
+  line-height: 28px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2015:2099"] *,
+[data-language="ru"] [data-id="2015:2110"] *,
+[data-language="ru"] [data-id="2015:2121"] *,
+[data-language="ru"] [data-id="2015:2132"] *,
+[data-language="ru"] [data-id="2015:2143"] *,
+[data-language="ru"] [data-id="2062:12"] *,
+[data-language="ru"] [data-id="2062:23"] *,
+[data-language="ru"] [data-id="2062:34"] * {
+  font-size: 15px !important;
+  line-height: 20px !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;
+}
+
+[data-language="ru"] [data-id="2015:2098"] {
+  width: 228px !important;
+}
+
+[data-language="ru"] [data-id="2015:2109"] {
+  width: 210px !important;
+}
+
+[data-language="ru"] [data-id="2015:2120"] {
+  width: 230px !important;
+}
+
+[data-language="ru"] [data-id="2015:2131"] {
+  width: 220px !important;
+}
+
+[data-language="ru"] [data-id="2015:2142"] {
+  width: 190px !important;
+}
+
+[data-language="ru"] [data-id="2062:11"] {
+  width: 140px !important;
+}
+
+[data-language="ru"] [data-id="2062:22"] {
+  width: 230px !important;
+}
+
+[data-language="ru"] [data-id="2062:33"] {
+  width: 170px !important;
+}
+
+[data-language="ru"] [data-id="2015:2099"],
+[data-language="ru"] [data-id="2015:2110"],
+[data-language="ru"] [data-id="2015:2121"],
+[data-language="ru"] [data-id="2015:2132"],
+[data-language="ru"] [data-id="2015:2143"],
+[data-language="ru"] [data-id="2062:12"],
+[data-language="ru"] [data-id="2062:23"],
+[data-language="ru"] [data-id="2062:34"] {
+  height: 20px !important;
+  transform: matrix(1, 0, 0, 1, 10, 7) !important;
+}
+
+[data-language="ru"] [data-id="2015:2099"] {
+  width: 208px !important;
+}
+
+[data-language="ru"] [data-id="2015:2110"] {
+  width: 190px !important;
+}
+
+[data-language="ru"] [data-id="2015:2121"] {
+  width: 210px !important;
+}
+
+[data-language="ru"] [data-id="2015:2132"] {
+  width: 200px !important;
+}
+
+[data-language="ru"] [data-id="2015:2143"] {
+  width: 170px !important;
+}
+
+[data-language="ru"] [data-id="2062:12"] {
+  width: 120px !important;
+}
+
+[data-language="ru"] [data-id="2062:23"] {
+  width: 210px !important;
+}
+
+[data-language="ru"] [data-id="2062:34"] {
+  width: 150px !important;
+}
+
+[data-language="ru"] [data-id="2015:2101"] *,
+[data-language="ru"] [data-id="2015:2112"] *,
+[data-language="ru"] [data-id="2015:2123"] *,
+[data-language="ru"] [data-id="2015:2134"] *,
+[data-language="ru"] [data-id="2015:2145"] *,
+[data-language="ru"] [data-id="2062:14"] *,
+[data-language="ru"] [data-id="2062:25"] *,
+[data-language="ru"] [data-id="2062:36"] * {
+  font-size: 15.5px !important;
+  line-height: 22px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2015:2101"],
+[data-language="ru"] [data-id="2015:2112"],
+[data-language="ru"] [data-id="2015:2123"],
+[data-language="ru"] [data-id="2015:2134"],
+[data-language="ru"] [data-id="2015:2145"],
+[data-language="ru"] [data-id="2062:14"],
+[data-language="ru"] [data-id="2062:25"],
+[data-language="ru"] [data-id="2062:36"] {
+  width: 820px !important;
+  height: 50px !important;
+}
+
+[data-language="ru"] [data-id="2015:2100"],
+[data-language="ru"] [data-id="2015:2144"],
+[data-language="ru"] [data-id="2062:13"],
+[data-language="ru"] [data-id="2150:359"],
+[data-language="ru"] [data-id="2150:370"],
+[data-language="ru"] [data-id="2150:436"] {
+  display: none !important;
+}
+
+[data-id="2015:2100"],
+[data-id="2015:2144"],
+[data-id="2062:13"],
+[data-id="2150:359"],
+[data-id="2150:370"],
+[data-id="2150:436"] {
+  display: none !important;
+}
+
+[data-language="ru"] [data-id="2015:1907"] *,
+[data-language="ru"] [data-id="2015:1913"] *,
+[data-language="ru"] [data-id="2015:1919"] * {
+  font-size: 13px !important;
+  line-height: 16px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2015:1909"] *,
+[data-language="ru"] [data-id="2015:1915"] *,
+[data-language="ru"] [data-id="2015:1921"] * {
+  font-size: 16.5px !important;
+  line-height: 23.5px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2015:1909"],
+[data-language="ru"] [data-id="2015:1915"],
+[data-language="ru"] [data-id="2015:1921"] {
+  height: 300px !important;
+}
+
+[data-language="ru"] [data-id="2015:1921"] {
+  transform: matrix(1, 0, 0, 1, 38, 184) !important;
+}
+
+[data-language="ru"] [data-id="2154:3"] *,
+[data-language="ru"] [data-id="2149:113"] * {
+  font-size: 11px !important;
+  line-height: 16px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2149:108"] * {
+  font-size: 21px !important;
+  line-height: 26px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2149:108"] {
+  height: 38px !important;
+  transform: matrix(1, 0, 0, 1, 0, 12) !important;
+}
+
+[data-language="ru"] [data-id="2150:350"] * {
+  font-size: 22px !important;
+  line-height: 26px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2150:352"] *,
+[data-language="ru"] [data-id="2150:353"] * {
+  font-size: 11.5px !important;
+  line-height: 17px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2150:353"] {
+  height: 184px !important;
+}
+
+[data-language="ru"] [data-id="2150:359"] *,
+[data-language="ru"] [data-id="2150:370"] *,
+[data-language="ru"] [data-id="2150:436"] * {
+  font-size: 10px !important;
+  line-height: 13px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2150:358"] *,
+[data-language="ru"] [data-id="2150:369"] *,
+[data-language="ru"] [data-id="2150:380"] *,
+[data-language="ru"] [data-id="2150:391"] *,
+[data-language="ru"] [data-id="2150:402"] *,
+[data-language="ru"] [data-id="2150:413"] *,
+[data-language="ru"] [data-id="2150:424"] *,
+[data-language="ru"] [data-id="2150:435"] * {
+  font-size: 11.5px !important;
+  line-height: 17px !important;
+  letter-spacing: 0 !important;
+  white-space: normal !important;
+}
+
+[data-language="ru"] [data-id="2150:357"] {
+  width: 154px !important;
+}
+
+[data-language="ru"] [data-id="2150:379"] {
+  width: 152px !important;
+}
+
+[data-language="ru"] [data-id="2150:390"] {
+  width: 158px !important;
+}
+
+[data-language="ru"] [data-id="2150:401"] {
+  width: 154px !important;
+}
+
+[data-language="ru"] [data-id="2150:412"] {
+  width: 134px !important;
+}
+
+[data-language="ru"] [data-id="2150:423"] {
+  width: 146px !important;
+}
+
+[data-language="ru"] [data-id="2150:434"] {
+  width: 140px !important;
+}
+
+[data-language="ru"] [data-id="2150:358"],
+[data-language="ru"] [data-id="2150:369"],
+[data-language="ru"] [data-id="2150:380"],
+[data-language="ru"] [data-id="2150:391"],
+[data-language="ru"] [data-id="2150:402"],
+[data-language="ru"] [data-id="2150:413"],
+[data-language="ru"] [data-id="2150:424"],
+[data-language="ru"] [data-id="2150:435"] {
+  height: 34px !important;
+  transform: matrix(1, 0, 0, 1, 8, 6) !important;
+}
+
+[data-language="ru"] [data-id="2150:358"] {
+  width: 138px !important;
+}
+
+[data-language="ru"] [data-id="2150:369"] {
+  width: 95px !important;
+}
+
+[data-language="ru"] [data-id="2150:380"] {
+  width: 136px !important;
+}
+
+[data-language="ru"] [data-id="2150:391"] {
+  width: 142px !important;
+}
+
+[data-language="ru"] [data-id="2150:402"] {
+  width: 138px !important;
+}
+
+[data-language="ru"] [data-id="2150:413"] {
+  width: 118px !important;
+}
+
+[data-language="ru"] [data-id="2150:424"] {
+  width: 130px !important;
+}
+
+[data-language="ru"] [data-id="2150:435"] {
+  width: 124px !important;
+}
+
+[data-language="ru"] [data-id="2150:360"] *,
+[data-language="ru"] [data-id="2150:371"] *,
+[data-language="ru"] [data-id="2150:382"] *,
+[data-language="ru"] [data-id="2150:393"] *,
+[data-language="ru"] [data-id="2150:404"] *,
+[data-language="ru"] [data-id="2150:415"] *,
+[data-language="ru"] [data-id="2150:426"] *,
+[data-language="ru"] [data-id="2150:437"] * {
+  font-size: 12px !important;
+  line-height: 16px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2150:360"],
+[data-language="ru"] [data-id="2150:371"],
+[data-language="ru"] [data-id="2150:382"],
+[data-language="ru"] [data-id="2150:393"],
+[data-language="ru"] [data-id="2150:404"],
+[data-language="ru"] [data-id="2150:415"],
+[data-language="ru"] [data-id="2150:426"],
+[data-language="ru"] [data-id="2150:437"] {
+  width: 216px !important;
+  height: 48px !important;
+}
+
+[data-language="ru"] [data-id="2159:5"] * {
+  font-size: 24px !important;
+  line-height: 30px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2159:32"] * {
+  font-size: 13px !important;
+  line-height: 18px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2133:13"] {
+  width: 240px !important;
+  height: 58px !important;
+  transform: matrix(1, 0, 0, 1, 30, 810) !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+[data-language="ru"] [data-id="2133:13"] *,
+[data-language="ru"] [data-id="2133:13"] .fig-text-content {
+  text-align: center !important;
+}
+
+[data-language="ru"] [data-id="2153:17"] *,
+[data-language="ru"] [data-id="2153:19"] *,
+[data-language="ru"] [data-id="2153:22"] *,
+[data-language="ru"] [data-id="2153:27"] * {
+  font-size: 12px !important;
+  line-height: 14px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2153:25"] * {
+  font-size: 10.5px !important;
+  line-height: 13px !important;
+  letter-spacing: 0 !important;
+}
+
+[data-language="ru"] [data-id="2153:24"],
+[data-language="ru"] [data-id="2153:25"],
+[data-language="ru"] [data-id="2153:26"],
+[data-language="ru"] [data-id="2153:27"] {
+  overflow: visible !important;
+}
+
+[data-language="ru"] [data-id="2153:25"] {
+  width: 108.28px !important;
+  transform: matrix(1, 0, 0, 1, 0, -1.205) !important;
+}
+
+[data-language="ru"] [data-id="2015:2417"] {
+  width: 550px !important;
+  height: 268px !important;
+}
+
+[data-language="ru"] [data-id="2015:2423"],
+[data-language="ru"] [data-id="2015:2424"],
+[data-language="ru"] [data-id="2015:2425"],
+[data-language="ru"] [data-id="2015:2426"],
+[data-language="ru"] [data-id="2015:2427"] {
+  height: 56px !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+[data-language="ru"] [data-id="2015:2423"] *,
+[data-language="ru"] [data-id="2015:2424"] *,
+[data-language="ru"] [data-id="2015:2425"] *,
+[data-language="ru"] [data-id="2015:2426"] *,
+[data-language="ru"] [data-id="2015:2427"] * {
+  font-size: 22px !important;
+  line-height: 27px !important;
+  letter-spacing: 0 !important;
+  text-align: center !important;
+}
+
+[data-language="ru"] [data-id="2015:2426"] {
+  width: 304px !important;
+  transform: matrix(1, 0, 0, 1, 0, 185.37) !important;
+}
+
+[data-language="ru"] [data-id="2015:2427"] {
+  width: 220px !important;
+  transform: matrix(1, 0, 0, 1, 312, 185.37) !important;
+}
+
+[data-language="ru"] [data-id="2153:5"],
+[data-language="ru"] [data-id="2153:6"],
+[data-language="ru"] [data-id="2153:16"],
+[data-language="ru"] [data-id="2153:17"],
+[data-language="ru"] [data-id="2153:18"],
+[data-language="ru"] [data-id="2153:19"],
+[data-language="ru"] [data-id="2153:21"],
+[data-language="ru"] [data-id="2153:22"],
+[data-language="ru"] [data-id="2153:24"],
+[data-language="ru"] [data-id="2153:25"],
+[data-language="ru"] [data-id="2153:26"],
+[data-language="ru"] [data-id="2153:27"] {
+  width: 296px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+[data-language="ru"] [data-id="2153:5"],
+[data-language="ru"] [data-id="2153:6"],
+[data-language="ru"] [data-id="2153:16"],
+[data-language="ru"] [data-id="2153:17"],
+[data-language="ru"] [data-id="2153:18"],
+[data-language="ru"] [data-id="2153:19"],
+[data-language="ru"] [data-id="2153:21"],
+[data-language="ru"] [data-id="2153:22"],
+[data-language="ru"] [data-id="2153:25"],
+[data-language="ru"] [data-id="2153:27"] {
+  transform: matrix(1, 0, 0, 1, 0, 0) !important;
+}
+
+[data-language="ru"] [data-id="2153:23"] {
+  height: 80px !important;
+}
+
+[data-language="ru"] [data-id="2153:24"] {
+  height: 32px !important;
+  transform: matrix(1, 0, 0, 1, 0, 0) !important;
+}
+
+[data-language="ru"] [data-id="2153:26"] {
+  height: 32px !important;
+  transform: matrix(1, 0, 0, 1, 0, 40) !important;
+}
+
+[data-language="ru"] [data-id="2153:25"],
+[data-language="ru"] [data-id="2153:27"] {
+  height: 32px !important;
+}
+
+[data-language="ru"] [data-id="2153:25"] *,
+[data-language="ru"] [data-id="2153:27"] * {
+  font-size: 12px !important;
+  line-height: 16px !important;
+  text-align: center !important;
+}
+
+[data-language="ru"] [data-id="2153:18"] {
+  transform: matrix(1, 0, 0, 1, 0, 33.59) !important;
 }
 
 [data-id="2015:2415"] {
@@ -658,8 +1482,8 @@ body {
 }
 
 .fig-shell[data-mode="desktop"] .curriculum-detail-column h4 {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .fig-shell[data-mode="desktop"] .curriculum-detail-column ul {
@@ -668,8 +1492,8 @@ body {
 
 .fig-shell[data-mode="desktop"] .curriculum-detail-column li {
   padding-left: 14px;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 15.5px;
+  line-height: 22px;
 }
 
 .fig-shell[data-mode="desktop"] .curriculum-detail-column li + li {
@@ -703,8 +1527,8 @@ body {
 }
 
 .fig-shell[data-mode="mobile"] .curriculum-detail-column h4 {
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 11.5px;
+  line-height: 14px;
 }
 
 .fig-shell[data-mode="mobile"] .curriculum-detail-column ul {
@@ -713,8 +1537,8 @@ body {
 
 .fig-shell[data-mode="mobile"] .curriculum-detail-column li {
   padding-left: 8px;
-  font-size: 9px;
-  line-height: 12px;
+  font-size: 10.5px;
+  line-height: 14px;
 }
 
 .fig-shell[data-mode="mobile"] .curriculum-detail-column li + li {
@@ -1133,6 +1957,10 @@ body {
   display: block;
 }
 
+.career-challenge-copy {
+  display: contents;
+}
+
 .career-challenge-card strong {
   align-self: end;
   margin-top: 8px;
@@ -1177,6 +2005,96 @@ body {
 .fig-shell[data-mode="mobile"] .career-challenge-card span {
   margin-top: 10px;
   font-size: 14px;
+  line-height: 18px;
+}
+
+[data-language="ru"] .career-challenge-card {
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 168px minmax(0, 1fr);
+}
+
+[data-language="ru"] .career-challenge-copy {
+  display: flex;
+  grid-row: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  justify-self: stretch;
+  min-height: 0;
+  gap: 10px;
+}
+
+[data-language="ru"] .career-challenge-card strong,
+[data-language="ru"] .career-challenge-card span {
+  display: block;
+  width: 100%;
+  max-width: 268px;
+  text-align: center;
+}
+
+[data-language="ru"] .career-challenge-card strong {
+  margin-top: 0;
+}
+
+[data-language="ru"] .career-challenge-card span {
+  margin-top: 0;
+}
+
+[data-language="ru"] .career-challenge-card span:empty {
+  display: none;
+}
+
+[data-language="ru"] .fig-shell[data-mode="mobile"] .career-challenge-card {
+  grid-template-rows: 126px minmax(0, 1fr);
+}
+
+[data-language="ru"] .fig-shell[data-mode="mobile"] .career-challenge-copy {
+  gap: 7px;
+}
+
+[data-language="ru"] .fig-shell[data-mode="mobile"] .career-challenge-copy > * {
+  transform: translateY(-4px);
+}
+
+[data-language="ru"] .fig-shell[data-mode="mobile"] .career-challenge-card strong,
+[data-language="ru"] .fig-shell[data-mode="mobile"] .career-challenge-card span {
+  max-width: 208px;
+}
+
+[data-language="ru"] .fig-shell[data-mode="mobile"] .mobile-testimonial-strip {
+  height: 398px !important;
+}
+
+[data-language="ru"] .fig-shell[data-mode="mobile"] .mobile-testimonial-card {
+  height: 372px;
+}
+
+[data-language="ru"] .fig-shell[data-mode="mobile"] .mobile-testimonial-header {
+  grid-template-columns: 58px 1fr;
+  min-height: 62px;
+}
+
+[data-language="ru"] .fig-shell[data-mode="mobile"] .mobile-testimonial-header img {
+  width: 58px;
+  height: 58px;
+}
+
+[data-language="ru"] .fig-shell[data-mode="mobile"] .mobile-testimonial-header strong {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+[data-language="ru"] .fig-shell[data-mode="mobile"] .mobile-testimonial-header span {
+  margin-top: 5px;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+[data-language="ru"] .fig-shell[data-mode="mobile"] .mobile-testimonial-card p {
+  margin-top: 14px;
+  font-size: 13px;
   line-height: 18px;
 }
 

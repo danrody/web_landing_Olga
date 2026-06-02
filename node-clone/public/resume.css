@@ -416,6 +416,48 @@
   font: 800 20px/1.2 "Manrope", "Inter", Arial, sans-serif;
 }
 
+[data-language="ru"] .resume-kicker {
+  max-width: 740px;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+[data-language="ru"] .resume-hero h1 {
+  font-size: 72px;
+  line-height: 0.98;
+}
+
+[data-language="ru"] .resume-lead {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+[data-language="ru"] .resume-snapshot strong {
+  font-size: 30px;
+}
+
+[data-language="ru"] .resume-snapshot span,
+[data-language="ru"] .resume-panel li,
+[data-language="ru"] .resume-competencies li {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+[data-language="ru"] .resume-copy p,
+[data-language="ru"] .resume-note {
+  font-size: 17px;
+  line-height: 1.58;
+}
+
+[data-language="ru"] .resume-timeline h3 {
+  font-size: 20px;
+}
+
+[data-language="ru"] .resume-competencies h3 {
+  font-size: 18px;
+  line-height: 1.25;
+}
+
 @media (max-width: 980px) {
   .resume-nav,
   .resume-page {
@@ -431,6 +473,10 @@
 
   .resume-hero h1 {
     font-size: 58px;
+  }
+
+  [data-language="ru"] .resume-hero h1 {
+    font-size: 52px;
   }
 
   .resume-lead {
@@ -497,10 +543,20 @@
     line-height: 1;
   }
 
+  [data-language="ru"] .resume-hero h1 {
+    max-width: 340px;
+    font-size: 34px;
+  }
+
   .resume-lead {
     margin-top: 22px;
     font-size: 17px;
     line-height: 1.5;
+  }
+
+  [data-language="ru"] .resume-lead {
+    font-size: 15px;
+    line-height: 1.52;
   }
 
   .resume-actions {
