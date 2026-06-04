@@ -45,7 +45,7 @@
       <span class="language-switcher-code"></span>
     `;
     button.addEventListener("click", toggleLanguage);
-    document.body.appendChild(button);
+    (document.querySelector(".legal-links") || document.body).appendChild(button);
     updateSwitcher(getLanguage());
   }
 

@@ -227,7 +227,7 @@ body {
 .language-switcher {
   position: fixed;
   right: 22px;
-  bottom: 22px;
+  top: 92px;
   z-index: 1000;
   display: inline-grid;
   grid-template-columns: 24px auto;
@@ -245,6 +245,12 @@ body {
   font: 800 13px/1 "Inter", "Manrope", Arial, sans-serif;
   cursor: pointer;
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, color 180ms ease;
+}
+
+.legal-links .language-switcher {
+  position: static;
+  right: auto;
+  top: auto;
 }
 
 .language-switcher:hover {
@@ -2215,11 +2221,17 @@ body {
 
 @media (max-width: 767px) {
   .language-switcher {
-    right: 14px;
-    bottom: 14px;
+    top: 14px;
+    right: max(96px, 19vw);
     min-width: 76px;
     height: 42px;
     padding: 0 12px;
+  }
+
+  .legal-links .language-switcher {
+    position: static;
+    right: auto;
+    top: auto;
   }
 }
 
